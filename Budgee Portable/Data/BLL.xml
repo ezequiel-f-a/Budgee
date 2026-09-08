@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BLL</name>
+    </assembly>
+    <members>
+        <member name="T:BLL.BusinessExceptions.FondosInsuficientesException">
+            <summary>
+            Excepción que sucede cuando el balance de una cuenta que no admite fondos negativos, se vuelve negativo.
+            </summary>
+        </member>
+        <member name="T:BLL.BusinessExceptions.UnknownTaskException">
+            <summary>
+            Excepción de SchedulerService que informa cuando el tipo de tarea seleccionado no posee un manejo en el servicio.
+            </summary>
+        </member>
+        <member name="T:BLL.BusinessExceptions.ResourceDoesNotMatchTaskException">
+            <summary>
+            Excepción de SchedulerService que informa cuando el recurso asignado de una tarea no es propio de el tipo de tarea.
+            </summary>
+        </member>
+        <member name="T:BLL.Contracts.IEstadisticaService`1">
+            <summary>
+            Interfaz generica para estadística, donde T herede de Estadística.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:BLL.Contracts.GenericTransaccionService`1">
+            <summary>
+            Interfaz generica de transacciones para servicios del negocio, donde T herede de una transacción genérica.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:BLL.Services.BackupService">
+            <summary>
+            Brinda servicio de respaldo de datos para determinado usuario, exportando la información serializada
+            en formato binario.
+            También permite la restauración de los datos de un usuario a partir de un respaldo dado (eliminando
+            en el proceso todos los datos anteriores del usuario restaurado).
+            </summary>
+        </member>
+        <member name="T:BLL.Services.BackupService.Backup">
+            <summary>
+            Bloque de datos para la generación o restauración de un respaldo.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.EstadisticaPresupuestoService">
+            <summary>
+            Servicio de estadística de holgura de presupuesto.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.EstadisticaPatrimonioNetoService">
+            <summary>
+            Servicio de estadística de patrimonio neto.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.EstadisticaIngresoEgresoService">
+            <summary>
+            Servicio de estadística de ingreso/egreso.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.EstadisticaDistribucionService">
+            <summary>
+            Servicio de estadística de distribución.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.EstadisticaOverviewService">
+            <summary>
+            Servicio de estadística de overview.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.ExpresionService">
+            <summary>
+            Servicio del negocio de Expresión.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.PresupuestoService">
+            <summary>
+            Servicio del negocio de Presupuesto.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.RecordatorioService">
+            <summary>
+            Servicio del negocio de Recordatorio.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.CuentaService">
+            <summary>
+            Servicio del negocio de Cuenta.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.NotificacionService">
+            <summary>
+            Servicio del negocio de Notificación.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.PlantillaTransaccionService">
+            <summary>
+            Servicio del negocio de Plantilla de Transacción.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.PlanificacionService">
+            <summary>
+            Servicio del negocio de Planificación.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.SchedulerService">
+            <summary>
+            Servicio que se encarga de ejecutar tareas programadas.
+            Entre estas tareas encontramos: Planificación de transacciones, chequeo de presupuestos, disparo de recordatorios, 
+            eliminación de notificaciones expiradas, generación de backups automática y tracking de sesión.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.StartupService">
+            <summary>
+            Servicio que se encarga de inicializar algunos procesos que requieren ejecución al iniciar sesión.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.TransaccionService">
+            <summary>
+            Servicio del negocio de Transacción.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.UsuarioService">
+            <summary>
+            Servicio del negocio de Usuario.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.VariableService">
+            <summary>
+            Servicio del negocio de Variable.
+            </summary>
+        </member>
+        <member name="T:BLL.Services.CaracteristicaService">
+            <summary>
+            Servicio del negocio de Característica.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1380 @@
+{
+  "translations": [
+    {
+      "Key": "Transacción",
+      "Translated": "Transaction"
+    },
+    {
+      "Key": "Transacciones",
+      "Translated": "Transactions"
+    },
+    {
+      "Key": "Planificación",
+      "Translated": "Planification"
+    },
+    {
+      "Key": "Plantilla",
+      "Translated": "Template"
+    },
+    {
+      "Key": "Plantillas",
+      "Translated": "Templates"
+    },
+    {
+      "Key": "Presupuesto",
+      "Translated": "Budget"
+    },
+    {
+      "Key": "Presupuestos",
+      "Translated": "Budgets"
+    },
+    {
+      "Key": "Recordatorio",
+      "Translated": "Reminder"
+    },
+    {
+      "Key": "Recordatorios",
+      "Translated": "Reminders"
+    },
+    {
+      "Key": "Cuenta",
+      "Translated": "Account"
+    },
+    {
+      "Key": "Cuentas",
+      "Translated": "Accounts"
+    },
+    {
+      "Key": "Categoria",
+      "Translated": "Category"
+    },
+    {
+      "Key": "Categoría",
+      "Translated": "Category"
+    },
+    {
+      "Key": "Categorías",
+      "Translated": "Categories"
+    },
+    {
+      "Key": "Etiqueta",
+      "Translated": "Tag"
+    },
+    {
+      "Key": "Etiquetas",
+      "Translated": "Tags"
+    },
+    {
+      "Key": "Usuario",
+      "Translated": "User"
+    },
+    {
+      "Key": "Usuarios",
+      "Translated": "Users"
+    },
+    {
+      "Key": "Perfiles",
+      "Translated": "Profiles"
+    },
+    {
+      "Key": "Permisos",
+      "Translated": "Permissions"
+    },
+    {
+      "Key": "Estadística",
+      "Translated": "Statistic"
+    },
+    {
+      "Key": "Estadísticas",
+      "Translated": "Statistics"
+    },
+    {
+      "Key": "Notificaciones",
+      "Translated": "Notifications"
+    },
+    {
+      "Key": "Configuración",
+      "Translated": "Configuration"
+    },
+    {
+      "Key": "Contraseña",
+      "Translated": "Password"
+    },
+    {
+      "Key": "Mantener Sesión Iniciada",
+      "Translated": "Keep Logged In"
+    },
+    {
+      "Key": "Mostrar Contraseña",
+      "Translated": "Show Password"
+    },
+    {
+      "Key": "Crear Usuario",
+      "Translated": "Create User"
+    },
+    {
+      "Key": "Iniciar Sesión",
+      "Translated": "Log In"
+    },
+    {
+      "Key": "Nuevo Nombre",
+      "Translated": "New Name"
+    },
+    {
+      "Key": "Confirmar Contraseña Actual",
+      "Translated": "Confirm Current Password"
+    },
+    {
+      "Key": "Nueva Contraseña",
+      "Translated": "New Password"
+    },
+    {
+      "Key": "Ayuda",
+      "Translated": "Help"
+    },
+    {
+      "Key": "Manual de Ayuda [F1]",
+      "Translated": "Help Manual [F1]"
+    },
+    {
+      "Key": "Acerca de Budgee",
+      "Translated": "About Budgee"
+    },
+    {
+      "Key": "Administrador",
+      "Translated": "Administrator"
+    },
+    {
+      "Key": "Administrar Usuarios",
+      "Translated": "Administrate Users"
+    },
+    {
+      "Key": "Administrar Perfiles",
+      "Translated": "Administrate Profiles"
+    },
+    {
+      "Key": "Restablecer Idiomas",
+      "Translated": "Restore Languages"
+    },
+    {
+      "Key": "Perfiles o Permisos Relacionados",
+      "Translated": "Related Profiles or Permissions"
+    },
+    {
+      "Key": "Idioma",
+      "Translated": "Language"
+    },
+    {
+      "Key": "Datos",
+      "Translated": "Data"
+    },
+    {
+      "Key": "Exportar Respaldo",
+      "Translated": "Export Backup"
+    },
+    {
+      "Key": "Restaurar Desde Respaldo",
+      "Translated": "Restore From Backup"
+    },
+    {
+      "Key": "Sesión",
+      "Translated": "Session"
+    },
+    {
+      "Key": "Configuración",
+      "Translated": "Configuration"
+    },
+    {
+      "Key": "Cerrar Sesión",
+      "Translated": "Log Out"
+    },
+    {
+      "Key": "Salir de la Aplicación",
+      "Translated": "Quit Application"
+    },
+    {
+      "Key": "Seleccionar Categoría",
+      "Translated": "Select Category"
+    },
+    {
+      "Key": "Seleccionar Cuenta",
+      "Translated": "Select Account"
+    },
+    {
+      "Key": "Seleccionar Etiqueta",
+      "Translated": "Select Tag"
+    },
+    {
+      "Key": "Seleccionar Perfil",
+      "Translated": "Select Profile"
+    },
+    {
+      "Key": "Seleccionar Permiso",
+      "Translated": "Select Permission"
+    },
+    {
+      "Key": "Seleccionar Planificación",
+      "Translated": "Select Planification"
+    },
+    {
+      "Key": "Seleccionar Plantilla",
+      "Translated": "Select Template"
+    },
+    {
+      "Key": "Seleccionar Presupuesto",
+      "Translated": "Select Budget"
+    },
+    {
+      "Key": "Seleccionar Transacción",
+      "Translated": "Select Transaction"
+    },
+    {
+      "Key": "Talonario de Categoría",
+      "Translated": "Category Form"
+    },
+    {
+      "Key": "Talonario de Cuenta",
+      "Translated": "Account Form"
+    },
+    {
+      "Key": "Talonario de Etiqueta",
+      "Translated": "Tag Form"
+    },
+    {
+      "Key": "Talonario de Perfil",
+      "Translated": "Profile Form"
+    },
+    {
+      "Key": "Talonario de Planificación",
+      "Translated": "Planification Form"
+    },
+    {
+      "Key": "Talonario de Plantilla",
+      "Translated": "Template Form"
+    },
+    {
+      "Key": "Talonario de Presupuesto",
+      "Translated": "Budget Form"
+    },
+    {
+      "Key": "Talonario de Recordatorio",
+      "Translated": "Reminder Form"
+    },
+    {
+      "Key": "Talonario de Transacción",
+      "Translated": "Transaction Form"
+    },
+    {
+      "Key": "Talonario de Usuario",
+      "Translated": "User Form"
+    },
+    {
+      "Key": "Establecer Expresión",
+      "Translated": "Set Expression"
+    },
+    {
+      "Key": "Establecer Variable",
+      "Translated": "Set Variable"
+    },
+    {
+      "Key": "Establecer Lapso",
+      "Translated": "Set Span"
+    },
+    {
+      "Key": "Establecer Frecuencia e Inicio",
+      "Translated": "Set Frequency & Start"
+    },
+    {
+      "Key": "Cambiar Nombre de Usuario",
+      "Translated": "Change Username"
+    },
+    {
+      "Key": "    Pendientes    ",
+      "Translated": "    Pending    "
+    },
+    {
+      "Key": "    Concretadas    ",
+      "Translated": "    Done    "
+    },
+    {
+      "Key": "    Nuevas    ",
+      "Translated": "    New    "
+    },
+    {
+      "Key": "    Vistas    ",
+      "Translated": "    Viewed    "
+    },
+    {
+      "Key": "    Ingresos / Egresos    ",
+      "Translated": "    Income / Expenses    "
+    },
+    {
+      "Key": "    Patrimonio Neto    ",
+      "Translated": "    Net Worth    "
+    },
+    {
+      "Key": "    Distribución    ",
+      "Translated": "    Distribution    "
+    },
+    {
+      "Key": "    Holgura de Presupuesto    ",
+      "Translated": "    Budget Looseness    "
+    },
+    {
+      "Key": "Aceptar",
+      "Translated": "Ok"
+    },
+    {
+      "Key": "Cancelar",
+      "Translated": "Cancel"
+    },
+    {
+      "Key": "Confirmar",
+      "Translated": "Confirm"
+    },
+    {
+      "Key": "Confirmar Contraseña",
+      "Translated": "Confirm Password"
+    },
+    {
+      "Key": "Establecer",
+      "Translated": "Set"
+    },
+    {
+      "Key": "Agregar",
+      "Translated": "Add"
+    },
+    {
+      "Key": "Crear",
+      "Translated": "Create"
+    },
+    {
+      "Key": "Eliminar",
+      "Translated": "Delete"
+    },
+    {
+      "Key": "Remover",
+      "Translated": "Remove"
+    },
+    {
+      "Key": "Modificar",
+      "Translated": "Modify"
+    },
+    {
+      "Key": "Habilitar",
+      "Translated": "Enable"
+    },
+    {
+      "Key": "Deshabilitar",
+      "Translated": "Disable"
+    },
+    {
+      "Key": "Seleccionar",
+      "Translated": "Select"
+    },
+    {
+      "Key": "Buscar",
+      "Translated": "Search"
+    },
+    {
+      "Key": "Exportar",
+      "Translated": "Export"
+    },
+    {
+      "Key": "Concretar",
+      "Translated": "Done"
+    },
+    {
+      "Key": "Ver Detalles",
+      "Translated": "View Details"
+    },
+    {
+      "Key": "Visto",
+      "Translated": "Viewed"
+    },
+    {
+      "Key": "Visto (Todos)",
+      "Translated": "Viewed (All)"
+    },
+    {
+      "Key": "Ir",
+      "Translated": "Go"
+    },
+    {
+      "Key": "Aplicar Filtros",
+      "Translated": "Apply Filters"
+    },
+    {
+      "Key": "Resetear Filtros",
+      "Translated": "Reset Filters"
+    },
+    {
+      "Key": "Cambiar Nombre",
+      "Translated": "Change Name"
+    },
+    {
+      "Key": "Cambiar Contraseña",
+      "Translated": "Change Password"
+    },
+    {
+      "Key": "Borrar Usuario",
+      "Translated": "Delete User"
+    },
+    {
+      "Key": "Establecer Frecuencia",
+      "Translated": "Set Frequency"
+    },
+    {
+      "Key": "Agregar Perfil",
+      "Translated": "Add Profile"
+    },
+    {
+      "Key": "Agregar Permiso",
+      "Translated": "Add Permission"
+    },
+    {
+      "Key": "Cargar desde Plantilla",
+      "Translated": "Load from Template"
+    },
+    {
+      "Key": "Guardar como Plantilla",
+      "Translated": "Save as Template"
+    },
+    {
+      "Key": "Insertar en Expresión",
+      "Translated": "Insert into Expression"
+    },
+    {
+      "Key": "Descripcion",
+      "Translated": "Description"
+    },
+    {
+      "Key": "Descripción",
+      "Translated": "Description"
+    },
+    {
+      "Key": "Descripción Planificación",
+      "Translated": "Planification Description"
+    },
+    {
+      "Key": "Descripción Plantilla",
+      "Translated": "Template Description"
+    },
+    {
+      "Key": "Descripción de Transacción",
+      "Translated": "Transaction Description"
+    },
+    {
+      "Key": "Descripción de Transacción Planificada",
+      "Translated": "Planned Transaction Description"
+    },
+    {
+      "Key": "Nombre",
+      "Translated": "Name"
+    },
+    {
+      "Key": "TipoOperacion",
+      "Translated": "Operation Type"
+    },
+    {
+      "Key": "Tipo Operación",
+      "Translated": "Operation Type"
+    },
+    {
+      "Key": "CondicionExpresion",
+      "Translated": "Condition"
+    },
+    {
+      "Key": "Valor de Condición",
+      "Translated": "Condition Value"
+    },
+    {
+      "Key": "LapsoPresupuesto",
+      "Translated": "Budget Span"
+    },
+    {
+      "Key": "Lapso de Presupuesto",
+      "Translated": "Budget Span"
+    },
+    {
+      "Key": "Lapso",
+      "Translated": "Span"
+    },
+    {
+      "Key": "Frecuencia",
+      "Translated": "Frequency"
+    },
+    {
+      "Key": "Horario",
+      "Translated": "Time"
+    },
+    {
+      "Key": "Año",
+      "Translated": "Year"
+    },
+    {
+      "Key": "Mes",
+      "Translated": "Month"
+    },
+    {
+      "Key": "Día",
+      "Translated": "Day"
+    },
+    {
+      "Key": "Fecha",
+      "Translated": "Date"
+    },
+    {
+      "Key": "Fecha Desde",
+      "Translated": "Date From"
+    },
+    {
+      "Key": "Fecha Hasta",
+      "Translated": "Date To"
+    },
+    {
+      "Key": "Fecha Transacción",
+      "Translated": "Transaction Date"
+    },
+    {
+      "Key": "Fecha Balance",
+      "Translated": "Balance Date"
+    },
+    {
+      "Key": "Fecha_Emision",
+      "Translated": "Date Sent"
+    },
+    {
+      "Key": "Informacion",
+      "Translated": "Information"
+    },
+    {
+      "Key": "Información",
+      "Translated": "Information"
+    },
+    {
+      "Key": "Procedencia",
+      "Translated": "Origin"
+    },
+    {
+      "Key": "FrecuenciaInicio",
+      "Translated": "Frequency and Start"
+    },
+    {
+      "Key": "Frecuencia e Inicio",
+      "Translated": "Frequency and Start"
+    },
+    {
+      "Key": "Generar Recordatorio Respectivo",
+      "Translated": "Generate Respective Reminder"
+    },
+    {
+      "Key": "QuitarAlConcluir",
+      "Translated": "Remove Upon Completion"
+    },
+    {
+      "Key": "Quitar al Concluir",
+      "Translated": "Remove Upon Completion"
+    },
+    {
+      "Key": "Ligado a Planificación",
+      "Translated": "Bound to Planification"
+    },
+    {
+      "Key": "VariableSupervisada",
+      "Translated": "Supervised Variable"
+    },
+    {
+      "Key": "OperadorRelacional",
+      "Translated": "..."
+    },
+    {
+      "Key": "CuandoChequear",
+      "Translated": "When to Check"
+    },
+    {
+      "Key": "Cuando Chequear",
+      "Translated": "When to Check"
+    },
+    {
+      "Key": "Cuando Cheq.",
+      "Translated": "Check When"
+    },
+    {
+      "Key": "MontoExpresion",
+      "Translated": "Amount"
+    },
+    {
+      "Key": "Monto",
+      "Translated": "Amount"
+    },
+    {
+      "Key": "Ingreso",
+      "Translated": "Income"
+    },
+    {
+      "Key": "Egreso",
+      "Translated": "Expenses"
+    },
+    {
+      "Key": "Variable",
+      "Translated": "Variable"
+    },
+    {
+      "Key": "Ganancia Neta",
+      "Translated": "Net Gain"
+    },
+    {
+      "Key": "Ingreso Potencial",
+      "Translated": "Potential Income"
+    },
+    {
+      "Key": "Egreso Potencial",
+      "Translated": "Potential Expenses"
+    },
+    {
+      "Key": "Ganancia Neta Potencial",
+      "Translated": "Potential Net Gain"
+    },
+    {
+      "Key": "Balance Potencial",
+      "Translated": "Potential Balance"
+    },
+    {
+      "Key": "Balance_Potencial",
+      "Translated": "Potential Balance"
+    },
+    {
+      "Key": "Balance Global",
+      "Translated": "Global Balance"
+    },
+    {
+      "Key": "Balance Global Potencial",
+      "Translated": "Potential Global Balance"
+    },
+    {
+      "Key": "Balance Actual",
+      "Translated": "Current Balance"
+    },
+    {
+      "Key": "Estado",
+      "Translated": "Status"
+    },
+    {
+      "Key": "Habilitado",
+      "Translated": "Enabled"
+    },
+    {
+      "Key": "Deshabilitado",
+      "Translated": "Disabled"
+    },
+    {
+      "Key": "Habilitada",
+      "Translated": "Enabled"
+    },
+    {
+      "Key": "Deshabilitada",
+      "Translated": "Disabled"
+    },
+    {
+      "Key": "Divisa",
+      "Translated": "Currency"
+    },
+    {
+      "Key": "Divisa Default",
+      "Translated": "Default Currency"
+    },
+    {
+      "Key": "Admite Fondos Negativos",
+      "Translated": "Accepts Negative Funds"
+    },
+    {
+      "Key": "Concretada",
+      "Translated": "Done"
+    },
+    {
+      "Key": "Transacción Concretada",
+      "Translated": "Done Transaction"
+    },
+    {
+      "Key": "Expresión",
+      "Translated": "Expression"
+    },
+    {
+      "Key": "Preview Resultado",
+      "Translated": "Result Preview"
+    },
+    {
+      "Key": "Estilo Gráfico",
+      "Translated": "Graph Style"
+    },
+    {
+      "Key": "Detalle",
+      "Translated": "Details"
+    },
+    {
+      "Key": "Detalles",
+      "Translated": "Details"
+    },
+    {
+      "Key": "Presupuesto Seleccionado",
+      "Translated": "Selected Budget"
+    },
+    {
+      "Key": "Presupuestado",
+      "Translated": "Budgeted"
+    },
+    {
+      "Key": "Actual",
+      "Translated": "Current"
+    },
+    {
+      "Key": "Nombre de Variable",
+      "Translated": "Variable Name"
+    },
+    {
+      "Key": "Tipo de Variable",
+      "Translated": "Variable Type"
+    },
+    {
+      "Key": "Mostrar",
+      "Translated": "Show"
+    },
+    {
+      "Key": "En Función de",
+      "Translated": "In Function of"
+    },
+    {
+      "Key": "Definicion",
+      "Translated": "Definition"
+    },
+    {
+      "Key": "Definición",
+      "Translated": "Definition"
+    },
+    {
+      "Key": "Valor",
+      "Translated": "Value"
+    },
+    {
+      "Key": "Magnitud",
+      "Translated": "Magnitude"
+    },
+    {
+      "Key": "Inicio",
+      "Translated": "Start"
+    },
+    {
+      "Key": "Establecer Notificación de Windows",
+      "Translated": "Set Windows Notification"
+    },
+    {
+      "Key": "Establecer Alarma de Windows",
+      "Translated": "Set Windows Alarm"
+    },
+    {
+      "Key": "Notificaciones Windows",
+      "Translated": "Windows Notifications"
+    },
+    {
+      "Key": "Alarmas Windows",
+      "Translated": "Windows Alarms"
+    },
+    {
+      "Key": "Notificaciones Estadísticas",
+      "Translated": "Statistics Notifications"
+    },
+    {
+      "Key": "Notificaciones Presupuestos",
+      "Translated": "Budget Notifications"
+    },
+    {
+      "Key": "Notificaciones Recordatorios",
+      "Translated": "Reminder Notifications"
+    },
+    {
+      "Key": "Eliminar Notificaciones luego de",
+      "Translated": "Delete Notifications after"
+    },
+    {
+      "Key": "Respaldar datos cada",
+      "Translated": "Backup data every"
+    },
+    {
+      "Key": "Cantidad Máxima Respaldos",
+      "Translated": "Maximum Backup Quantity"
+    },
+    {
+      "Key": "Año(s)",
+      "Translated": "Year(s)"
+    },
+    {
+      "Key": "Mes(es)",
+      "Translated": "Month(s)"
+    },
+    {
+      "Key": "Semana(s)",
+      "Translated": "Week(s)"
+    },
+    {
+      "Key": "Día(s)",
+      "Translated": "Day(s)"
+    },
+    {
+      "Key": "Histórico",
+      "Translated": "Historical"
+    },
+    {
+      "Key": "Este Año",
+      "Translated": "This Year"
+    },
+    {
+      "Key": "Este Semestre",
+      "Translated": "This Semester"
+    },
+    {
+      "Key": "Este Cuatrimestre",
+      "Translated": "This Quarter"
+    },
+    {
+      "Key": "Este Trimestre",
+      "Translated": "This Trimester"
+    },
+    {
+      "Key": "Este Mes",
+      "Translated": "This Month"
+    },
+    {
+      "Key": "Esta Semana",
+      "Translated": "This Week"
+    },
+    {
+      "Key": "Este Día",
+      "Translated": "This Day"
+    },
+    {
+      "Key": "Intervalo",
+      "Translated": "Interval"
+    },
+    {
+      "Key": "Enero",
+      "Translated": "January"
+    },
+    {
+      "Key": "Febrero",
+      "Translated": "February"
+    },
+    {
+      "Key": "Marzo",
+      "Translated": "March"
+    },
+    {
+      "Key": "Abril",
+      "Translated": "April"
+    },
+    {
+      "Key": "Mayo",
+      "Translated": "May"
+    },
+    {
+      "Key": "Junio",
+      "Translated": "June"
+    },
+    {
+      "Key": "Julio",
+      "Translated": "July"
+    },
+    {
+      "Key": "Agosto",
+      "Translated": "August"
+    },
+    {
+      "Key": "Septiembre",
+      "Translated": "September"
+    },
+    {
+      "Key": "Octubre",
+      "Translated": "October"
+    },
+    {
+      "Key": "Noviembre",
+      "Translated": "November"
+    },
+    {
+      "Key": "Diciembre",
+      "Translated": "December"
+    },
+    {
+      "Key": "Antepenúltimo",
+      "Translated": "Third to last"
+    },
+    {
+      "Key": "Penúltimo",
+      "Translated": "Second to last"
+    },
+    {
+      "Key": "Último",
+      "Translated": "Last"
+    },
+    {
+      "Key": "Lunes",
+      "Translated": "Monday"
+    },
+    {
+      "Key": "Martes",
+      "Translated": "Tuesday"
+    },
+    {
+      "Key": "Miércoles",
+      "Translated": "Wednesday"
+    },
+    {
+      "Key": "Jueves",
+      "Translated": "Thursday"
+    },
+    {
+      "Key": "Viernes",
+      "Translated": "Friday"
+    },
+    {
+      "Key": "Sábado",
+      "Translated": "Saturday"
+    },
+    {
+      "Key": "Domingo",
+      "Translated": "Sunday"
+    },
+    {
+      "Key": "Rojo",
+      "Translated": "Red"
+    },
+    {
+      "Key": "Naranja",
+      "Translated": "Orange"
+    },
+    {
+      "Key": "Amarillo",
+      "Translated": "Yellow"
+    },
+    {
+      "Key": "Verde",
+      "Translated": "Green"
+    },
+    {
+      "Key": "Celeste",
+      "Translated": "Light Blue"
+    },
+    {
+      "Key": "Azul",
+      "Translated": "Blue"
+    },
+    {
+      "Key": "Violeta",
+      "Translated": "Purple"
+    },
+    {
+      "Key": "Rosa",
+      "Translated": "Pink"
+    },
+    {
+      "Key": "Marrón",
+      "Translated": "Brown"
+    },
+    {
+      "Key": "Negro",
+      "Translated": "Black"
+    },
+    {
+      "Key": "Gris Oscuro",
+      "Translated": "Dark Gray"
+    },
+    {
+      "Key": "Gris Medio",
+      "Translated": "Medium Gray"
+    },
+    {
+      "Key": "Gris Claro",
+      "Translated": "Light Gray"
+    },
+    {
+      "Key": "Blanco",
+      "Translated": "White"
+    },
+    {
+      "Key": "Constantemente",
+      "Translated": "Constantly"
+    },
+    {
+      "Key": "Al Inicio",
+      "Translated": "At the Beginning"
+    },
+    {
+      "Key": "Al Final",
+      "Translated": "At the End"
+    },
+    {
+      "Key": "Mayor a",
+      "Translated": "Greater than"
+    },
+    {
+      "Key": "Menor a",
+      "Translated": "Less than"
+    },
+    {
+      "Key": "Mayor o Igual a",
+      "Translated": "Greater than or Equal to"
+    },
+    {
+      "Key": "Menor o Igual a",
+      "Translated": "Less than or Equal to"
+    },
+    {
+      "Key": "Igual a",
+      "Translated": "Equal to"
+    },
+    {
+      "Key": "Diferente de",
+      "Translated": "Different from"
+    },
+    {
+      "Key": "Ingreso/Egreso",
+      "Translated": "Income/Expenses"
+    },
+    {
+      "Key": "Patrimonio Neto",
+      "Translated": "Net Worth"
+    },
+    {
+      "Key": "Distribución",
+      "Translated": "Distribution"
+    },
+    {
+      "Key": "Holgura de Presupuesto",
+      "Translated": "Budget Looseness"
+    },
+    {
+      "Key": "Lineal",
+      "Translated": "Linear"
+    },
+    {
+      "Key": "Columnas",
+      "Translated": "Columns"
+    },
+    {
+      "Key": "Ingresos y Egresos",
+      "Translated": "Income and Expenses"
+    },
+    {
+      "Key": "Ingresos",
+      "Translated": "Income"
+    },
+    {
+      "Key": "Egresos",
+      "Translated": "Expenses"
+    },
+    {
+      "Key": "Sin etiqueta",
+      "Translated": "No Tag"
+    },
+    {
+      "Key": "Sin categoría",
+      "Translated": "No Category"
+    },
+    {
+      "Key": "Cada",
+      "Translated": "Every"
+    },
+    {
+      "Key": "Supervisa",
+      "Translated": "Supervises"
+    },
+    {
+      "Key": "De",
+      "Translated": "Of"
+    },
+    {
+      "Key": "sobre",
+      "Translated": "over"
+    },
+    {
+      "Key": "Página",
+      "Translated": "Page"
+    },
+    {
+      "Key": "de",
+      "Translated": "of"
+    },
+    {
+      "Key": "Guardar como",
+      "Translated": "Save as"
+    },
+    {
+      "Key": "Abrir",
+      "Translated": "Open"
+    },
+    {
+      "Key": "Presupuesto excedido",
+      "Translated": "Budget exceeded"
+    },
+    {
+      "Key": "Advertencia",
+      "Translated": "Warning"
+    },
+    {
+      "Key": "No se seleccionó ningún elemento.",
+      "Translated": "No item was selected."
+    },
+    {
+      "Key": "El elemento ya se encuentra deshabilitado.",
+      "Translated": "The item is already disabled."
+    },
+    {
+      "Key": "El elemento ya se encuentra habilitado.",
+      "Translated": "The item is already enabled."
+    },
+    {
+      "Key": "¿Está seguro que desea deshabilitar el elemento seleccionado?",
+      "Translated": "Are you sure you want to disable the selected item?"
+    },
+    {
+      "Key": "¿Está seguro que desea habilitar el elemento seleccionado?",
+      "Translated": "Are you sure you want to enable the selected item?"
+    },
+    {
+      "Key": "¿Está seguro que desea habilitar la cuenta seleccionada?\nEsto habilitará todas las planificaciones ligadas a esta.",
+      "Translated": "Are you sure you want to enable the selected account?\nThis will enable all planifications bounded to it."
+    },
+    {
+      "Key": "¿Está seguro que desea concretar la transacción?",
+      "Translated": "Are you sure you want to mark the transaction as done?"
+    },
+    {
+      "Key": "La transacción no posee una fecha. ¿Desea establecer la fecha y hora actual para concretarla?",
+      "Translated": "The transaction does not have a date. Do you want to set the current date and time to specify it?"
+    },
+    {
+      "Key": "Si desea concretar la transacción, deberá establecer su fecha desde el talonario de modificación respectivo.",
+      "Translated": "If you wish to mark the transaction as done, you must establish its date from the respective modification form."
+    },
+    {
+      "Key": "La transacción posee una fecha y hora superior a la actual. ¿Desea establecer la fecha y hora actual para concretarla?",
+      "Translated": "The transaction has a date and time greater than the current one. Do you want to set the current date and time to specify it?"
+    },
+    {
+      "Key": "¿Está seguro que desea eliminar el elemento seleccionado?",
+      "Translated": "Are you sure you want to delete the selected item?"
+    },
+    {
+      "Key": "El presupuesto que desea ver ya no existe.",
+      "Translated": "The budget you want to view no longer exists."
+    },
+    {
+      "Key": "El recordatorio que desea ver ya no existe.",
+      "Translated": "The reminder you want to view no longer exists."
+    },
+    {
+      "Key": "¿Está seguro que desea marcar la notificación seleccionada como vista?\nEste proceso no es reversible.",
+      "Translated": "Are you sure you want to mark the selected notification as a view?\nThis process is not reversible."
+    },
+    {
+      "Key": "¿Está seguro que desea marcar todas las notificaciones como vistas?\nEste proceso no es reversible.",
+      "Translated": "Are you sure you want to mark all notifications as viewed?\nThis process is not reversible."
+    },
+    {
+      "Key": "Está seguro que desea borrar el perfil?\nEsta acción no se puede revertir.",
+      "Translated": "Are you sure you want to delete the profile?\nThis action cannot be reversed."
+    },
+    {
+      "Key": "¿Está seguro que desea borrar el usuario?\nEsta acción no se puede revertir.",
+      "Translated": "Are you sure you want to delete the user?\nThis action cannot be reversed."
+    },
+    {
+      "Key": "¿Está seguro que desea remover el perfil/permiso del perfil?",
+      "Translated": "Are you sure you want to remove the profile's permission/profile?"
+    },
+    {
+      "Key": "¿Está seguro que desea remover el perfil/permiso del usuario?",
+      "Translated": "Are you sure you want to remove the user's permission/profile?"
+    },
+    {
+      "Key": "Los cambios surtirán efecto al reiniciar la aplicación",
+      "Translated": "Changes will take effect when you restart the application"
+    },
+    {
+      "Key": "El nuevo nombre es idéntico al que ya posee.",
+      "Translated": "The new name is identical to the one you already have."
+    },
+    {
+      "Key": "El nombre de usuario ya existe.",
+      "Translated": "The username already exists."
+    },
+    {
+      "Key": "La nueva contraseña es idéntica a la original.",
+      "Translated": "The new password is identical to the original."
+    },
+    {
+      "Key": "La contraseña actual ingresada no coincide con la real.",
+      "Translated": "The current password entered does not match the real one."
+    },
+    {
+      "Key": "La contraseña no coincide.",
+      "Translated": "The password does not match."
+    },
+    {
+      "Key": "Falta ingresar la expresión.",
+      "Translated": "The expression remains to be entered."
+    },
+    {
+      "Key": "La expresión es inválida.",
+      "Translated": "The expression is invalid."
+    },
+    {
+      "Key": "Hay campos que no fueron completados.",
+      "Translated": "There are fields that were not completed."
+    },
+    {
+      "Key": "La fecha ingresada es demasiado antigua.",
+      "Translated": "The date entered is too old."
+    },
+    {
+      "Key": "Debe seleccionar un lapso.",
+      "Translated": "You must select a span."
+    },
+    {
+      "Key": "La Fecha Desde es superior o igual a la Fecha Hasta.",
+      "Translated": "Date From is greater than or equal to Date To."
+    },
+    {
+      "Key": "Debe seleccionar un elemento.",
+      "Translated": "You must select an item."
+    },
+    {
+      "Key": "Falta ingresar usuario o contraseña.",
+      "Translated": "User or password is missing."
+    },
+    {
+      "Key": "Usuario o contraseña inválidos.",
+      "Translated": "Invalid user or password."
+    },
+    {
+      "Key": "El nombre de usuario y la contraseña no pueden coincidir.",
+      "Translated": "Username and password cannot match."
+    },
+    {
+      "Key": "Creación de usuario exitosa.",
+      "Translated": "Successful user creation."
+    },
+    {
+      "Key": "¿Está seguro que desea cerrar sesión?",
+      "Translated": "Are you sure you want to log out?"
+    },
+    {
+      "Key": "¿Está seguro que desea restaurar?\nLos datos actuales del usuario serán reemplazados por los importados. Este proceso no es reversible y durará varios segundos.",
+      "Translated": "Are you sure you want to restore?\nThe current data of the user will be replaced by the imported data. This process is not reversible and will take several seconds."
+    },
+    {
+      "Key": "Idiomas restablecidos. Reinicie la aplicación para que los cambios surtan efecto.",
+      "Translated": "Languages restored. Restart the application for the changes to take effect."
+    },
+    {
+      "Key": "¿Está seguro que desea salir de la aplicación?",
+      "Translated": "Are you sure you want to exit the application?"
+    },
+    {
+      "Key": "El nombre ya existe.",
+      "Translated": "The name already exists."
+    },
+    {
+      "Key": "Para que la cuenta deje de admitir fondos negativos, su balance actual no puede ser negativo.",
+      "Translated": "To stop the account from accepting negative funds, your current balance cannot be negative."
+    },
+    {
+      "Key": "Falta ingresar el nombre del perfil.",
+      "Translated": "The name of the profile remains to be entered."
+    },
+    {
+      "Key": "El nombre de perfil ya existe.",
+      "Translated": "The profile name already exists."
+    },
+    {
+      "Key": "¿Está seguro que desea eliminar el recordatorio ligado?",
+      "Translated": "Are you sure you want to delete the bounded reminder?"
+    },
+    {
+      "Key": "Falta establecer el monto.",
+      "Translated": "The amount remains to be established."
+    },
+    {
+      "Key": "Falta establecer la frecuencia e inicio.",
+      "Translated": "The frequency and start remains to be established."
+    },
+    {
+      "Key": "Falta establecer la variable supervisada.",
+      "Translated": "The supervised variable remains to be established."
+    },
+    {
+      "Key": "Falta establecer la condición.",
+      "Translated": "The condition remains to be established."
+    },
+    {
+      "Key": "Falta establecer el lapso del presupuesto.",
+      "Translated": "The budget span remains to be established."
+    },
+    {
+      "Key": "La fecha y hora de una transacción concretada no puede ser futura.",
+      "Translated": "The date and time of a done transaction cannot be in the future."
+    },
+    {
+      "Key": "Exportación de respaldo exitosa.",
+      "Translated": "Backup export successful."
+    },
+    {
+      "Key": "Restauración desde respaldo exitosa.\nLa aplicación se cerrará para aplicar los cambios.",
+      "Translated": "Restore from backup successful.\nThe app will close to apply the changes."
+    },
+    {
+      "Key": "El recurso no coincide con la tarea",
+      "Translated": "The resource does not match the task"
+    },
+    {
+      "Key": "El tipo de tarea no es reconocido",
+      "Translated": "Task type is not recognized"
+    },
+    {
+      "Key": "Realizar esta operación derivaría en un balance negativo para la cuenta correspondiente.\nEl balance considerado es aquel de la fecha de la transacción",
+      "Translated": "Carrying out this operation would result in a negative balance for the corresponding account.\nThe balance considered is that of the transaction date"
+    },
+    {
+      "Key": "Error inesperado relacionado con la base de datos",
+      "Translated": "Unexpected database related error"
+    },
+    {
+      "Key": "Error relacionado con la base de datos",
+      "Translated": "Database related error"
+    },
+    {
+      "Key": "Ha ocurrido un error inesperado",
+      "Translated": "An unexpected error has occurred"
+    },
+    {
+      "Key": "No se reconoce el ensamblado",
+      "Translated": "Assembly not recognized"
+    },
+    {
+      "Key": "Libro de Excel",
+      "Translated": "Excel Workbook"
+    },
+    {
+      "Key": "Archivo Binario",
+      "Translated": "Binary File"
+    },
+    {
+      "Key": "Copyright Ⓒ 2021 Ezequiel Francisco Amorosino - Todos los derechos reservados.",
+      "Translated": "Copyright Ⓒ 2021 Ezequiel Francisco Amorosino - All rights reserved."
+    },
+    {
+      "Key": "El software tiene como propósito principal la gestión y administración contable, para facilitar la toma de decisiones a la hora de realizar gastos y prevenir una situación financiera desfavorable.\r\n\r\nEl nombre del software proviene de una alteración fonética de la palabra “Budget”, que en inglés significa “presupuesto”.",
+      "Translated": "The main purpose of the software is accounting management and administration, to facilitate decision-making when making expenses and prevent an unfavorable financial situation.\r\n\r\nThe name of the software comes from a phonetic alteration of the word “Budget”."
+    }
+  ]
+}

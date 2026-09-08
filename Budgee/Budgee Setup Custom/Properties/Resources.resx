@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="install_part1" xml:space="preserve">
+    <value>USE [master]
+
+IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'Budgee')
+BEGIN
+	CREATE DATABASE [Budgee]
+END
+GO</value>
+  </data>
+  <data name="install_part2" xml:space="preserve">
+    <value>USE [Budgee]
+GO
+/****** Object:  Table [dbo].[Caracteristica]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Caracteristica](
+	[ID_Caracteristica] [uniqueidentifier] NOT NULL,
+	[Nombre] [varchar](50) NOT NULL,
+	[Color] [varchar](50) NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+	[Tipo_Caracteristica] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Etiqueta] PRIMARY KEY CLUSTERED 
+(
+	[ID_Caracteristica] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Configuracion_Usuario]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Configuracion_Usuario](
+	[ID_Configuracion_Usuario] [uniqueidentifier] NOT NULL,
+	[Divisa_Default] [varchar](50) NULL,
+	[Idioma] [varchar](50) NULL,
+	[Mantener_Sesion_Iniciada] [bit] NOT NULL,
+	[Alarmas_Windows] [bit] NOT NULL,
+	[Notificaciones_Windows] [bit] NOT NULL,
+	[Notificaciones_Presupuestos] [bit] NOT NULL,
+	[Notificaciones_Recordatorios] [bit] NOT NULL,
+	[Notificaciones_Estadisticas] [bit] NOT NULL,
+	[Notificaciones_Expiran] [bit] NOT NULL,
+	[Notificaciones_Expiran_Frecuencia] [varchar](50) NULL,
+	[Notificaciones_Expiran_Valor] [int] NULL,
+	[Respaldar] [bit] NOT NULL,
+	[Limite_Respaldos] [bit] NOT NULL,
+	[Respaldos_Cantidad_Maxima] [int] NULL,
+	[ID_FrecuenciaInicio_Respaldos] [uniqueidentifier] NULL,
+ CONSTRAINT [PK_Configuracion_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[ID_Configuracion_Usuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Cuenta]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Cuenta](
+	[ID_Cuenta] [uniqueidentifier] NOT NULL,
+	[Nombre_Cuenta] [varchar](50) NULL,
+	[Divisa] [varchar](50) NOT NULL,
+	[Admite_Fondos_Negativos] [bit] NOT NULL,
+	[Habilitado] [bit] NOT NULL,
+	[Estado] [bit] NOT NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+ CONSTRAINT [PK_Cuenta] PRIMARY KEY CLUSTERED 
+(
+	[ID_Cuenta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Expresion]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Expresion](
+	[ID_Expresion] [uniqueidentifier] NOT NULL,
+	[Definicion] [varchar](500) NOT NULL,
+	[Tipo_Expresion] [varchar](50) NOT NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+ CONSTRAINT [PK_Expresion_Cabecera] PRIMARY KEY CLUSTERED 
+(
+	[ID_Expresion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Expresion_Variable]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Expresion_Variable](
+	[ID_Expresion] [uniqueidentifier] NOT NULL,
+	[ID_Variable] [uniqueidentifier] NOT NULL,
+	[timestamp] [timestamp] NULL,
+ CONSTRAINT [PK_Expresion_Variable] PRIMARY KEY CLUSTERED 
+(
+	[ID_Expresion] ASC,
+	[ID_Variable] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Familia]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Familia](
+	[ID_Familia] [uniqueidentifier] NOT NULL,
+	[Nombre] [varchar](150) NOT NULL,
+	[timestamp] [timestamp] NULL,
+ CONSTRAINT [PK_Familia] PRIMARY KEY CLUSTERED 
+(
+	[ID_Familia] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Familia_Familia]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Familia_Familia](
+	[ID_Familia_Padre] [uniqueidentifier] NOT NULL,
+	[ID_Familia_Hija] [uniqueidentifier] NOT NULL,
+	[timestamp] [timestamp] NULL,
+ CONSTRAINT [PK_Familia_Familia] PRIMARY KEY CLUSTERED 
+(
+	[ID_Familia_Padre] ASC,
+	[ID_Familia_Hija] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Familia_Patente]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Familia_Patente](
+	[ID_Familia] [uniqueidentifier] NOT NULL,
+	[ID_Patente] [uniqueidentifier] NOT NULL,
+	[timestamp] [timestamp] NULL,
+ CONSTRAINT [PK_Familia_Patente] PRIMARY KEY CLUSTERED 
+(
+	[ID_Familia] ASC,
+	[ID_Patente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[FrecuenciaInicio]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[FrecuenciaInicio](
+	[ID_FrecuenciaInicio] [uniqueidentifier] NOT NULL,
+	[FrecuenciaMagnitud] [varchar](50) NULL,
+	[FrecuenciaValor] [int] NULL,
+	[Año] [int] NULL,
+	[Mes] [int] NULL,
+	[Dia_del_Mes] [varchar](50) NULL,
+	[Dia_de_la_Semana] [varchar](50) NULL,
+	[Horario] [time](7) NOT NULL,
+	[Fecha_Ultimo_Proceso] [datetime] NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+ CONSTRAINT [PK_FrecuenciaInicio] PRIMARY KEY CLUSTERED 
+(
+	[ID_FrecuenciaInicio] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Lapso]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Lapso](
+	[ID_Lapso] [uniqueidentifier] NOT NULL,
+	[Tipo_Lapso] [varchar](100) NOT NULL,
+	[Fecha_Desde] [datetime] NULL,
+	[Fecha_Hasta] [datetime] NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+ CONSTRAINT [PK_Lapso] PRIMARY KEY CLUSTERED 
+(
+	[ID_Lapso] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Notificacion]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Notificacion](
+	[ID_Notificacion] [uniqueidentifier] NOT NULL,
+	[Informacion] [varchar](400) NULL,
+	[Procedencia] [varchar](50) NOT NULL,
+	[ID_Recordatorio] [uniqueidentifier] NULL,
+	[ID_Presupuesto] [uniqueidentifier] NULL,
+	[Tipo_Estadistica] [varchar](50) NULL,
+	[Fecha_Emision] [datetime] NULL,
+	[Visto] [bit] NOT NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Notificacion] PRIMARY KEY CLUSTERED 
+(
+	[ID_Notificacion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Patente]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Patente](
+	[ID_Patente] [uniqueidentifier] NOT NULL,
+	[Nombre] [varchar](150) NULL,
+	[Definicion] [varchar](500) NULL,
+	[timestamp] [timestamp] NULL,
+ CONSTRAINT [PK_Patente] PRIMARY KEY CLUSTERED 
+(
+	[ID_Patente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Planificacion_Transaccion]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Planificacion_Transaccion](
+	[ID_Planificacion_Transaccion] [uniqueidentifier] NOT NULL,
+	[Descripcion_Planificacion] [varchar](150) NULL,
+	[Descripcion_Transaccion] [varchar](150) NULL,
+	[ID_Categoria] [uniqueidentifier] NULL,
+	[Tipo_Operacion] [varchar](50) NULL,
+	[ID_Monto_Expresion] [uniqueidentifier] NOT NULL,
+	[ID_FrecuenciaInicio] [uniqueidentifier] NOT NULL,
+	[ID_RecordatorioLigado] [uniqueidentifier] NULL,
+	[Quitar_Al_Concluir] [bit] NOT NULL,
+	[Habilitado] [bit] NOT NULL,
+	[ID_Cuenta] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Planificacion_Transaccion] PRIMARY KEY CLUSTERED 
+(
+	[ID_Planificacion_Transaccion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[PlanificacionTransaccion_Etiqueta]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[PlanificacionTransaccion_Etiqueta](
+	[ID_Planificacion_Transaccion] [uniqueidentifier] NOT NULL,
+	[ID_Etiqueta] [uniqueidentifier] NOT NULL,
+	[Orden] [int] NULL,
+ CONSTRAINT [PK_PlanificacionTransaccion_Etiqueta] PRIMARY KEY CLUSTERED 
+(
+	[ID_Planificacion_Transaccion] ASC,
+	[ID_Etiqueta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Plantilla_Transaccion]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Plantilla_Transaccion](
+	[ID_Plantilla_Transaccion] [uniqueidentifier] NOT NULL,
+	[Descripcion_Plantilla] [varchar](150) NULL,
+	[Descripcion_Transaccion] [varchar](150) NULL,
+	[ID_Categoria] [uniqueidentifier] NULL,
+	[Tipo_Operacion] [varchar](50) NULL,
+	[ID_Monto_Expresion] [uniqueidentifier] NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Plantilla_Transaccion] PRIMARY KEY CLUSTERED 
+(
+	[ID_Plantilla_Transaccion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[PlantillaTransaccion_Etiqueta]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[PlantillaTransaccion_Etiqueta](
+	[ID_Plantilla_Transaccion] [uniqueidentifier] NOT NULL,
+	[ID_Etiqueta] [uniqueidentifier] NOT NULL,
+	[Orden] [int] NULL,
+ CONSTRAINT [PK_PlantillaTransaccion_Etiqueta] PRIMARY KEY CLUSTERED 
+(
+	[ID_Plantilla_Transaccion] ASC,
+	[ID_Etiqueta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Presupuesto]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Presupuesto](
+	[ID_Presupuesto] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](150) NULL,
+	[Cuando_Chequear] [varchar](50) NOT NULL,
+	[ID_Variable_Supervisada] [uniqueidentifier] NOT NULL,
+	[Operador_Relacional] [varchar](50) NOT NULL,
+	[ID_Condicion_Expresion] [uniqueidentifier] NOT NULL,
+	[ID_Lapso_Frecuencia] [uniqueidentifier] NULL,
+	[Establecer_Notif_Windows] [bit] NOT NULL,
+	[Establecer_Alarma_Windows] [bit] NOT NULL,
+	[Habilitado] [bit] NOT NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Presupuesto] PRIMARY KEY CLUSTERED 
+(
+	[ID_Presupuesto] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Recordatorio]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Recordatorio](
+	[ID_Recordatorio] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](150) NULL,
+	[ID_FrecuenciaInicio] [uniqueidentifier] NOT NULL,
+	[Establecer_Notif_Windows] [bit] NOT NULL,
+	[Establecer_Alarma_Windows] [bit] NOT NULL,
+	[Quitar_Al_Concluir] [bit] NOT NULL,
+	[Habilitado] [bit] NOT NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Recordatorio] PRIMARY KEY CLUSTERED 
+(
+	[ID_Recordatorio] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[SesionTrack]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SesionTrack](
+	[ID_SesionTrack] [uniqueidentifier] NOT NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Fecha_Proceso] [datetime] NOT NULL,
+	[TipoTrack] [varchar](100) NULL,
+	[TimeStamp] [timestamp] NOT NULL,
+ CONSTRAINT [PK_SesionTrack] PRIMARY KEY CLUSTERED 
+(
+	[ID_SesionTrack] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Transaccion]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Transaccion](
+	[ID_Transaccion] [uniqueidentifier] NOT NULL,
+	[Descripcion] [varchar](150) NULL,
+	[ID_Categoria] [uniqueidentifier] NULL,
+	[Tipo_Operacion] [varchar](50) NULL,
+	[ID_Monto_Expresion] [uniqueidentifier] NOT NULL,
+	[Fecha] [datetime] NULL,
+	[Concretada] [bit] NOT NULL,
+	[ID_Cuenta] [uniqueidentifier] NOT NULL,
+	[Estado] [bit] NOT NULL,
+ CONSTRAINT [PK_Transaccion] PRIMARY KEY CLUSTERED 
+(
+	[ID_Transaccion] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Transaccion_Etiqueta]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Transaccion_Etiqueta](
+	[ID_Transaccion] [uniqueidentifier] NOT NULL,
+	[ID_Etiqueta] [uniqueidentifier] NOT NULL,
+	[Orden] [int] NOT NULL,
+ CONSTRAINT [PK_Transaccion_Etqieuta] PRIMARY KEY CLUSTERED 
+(
+	[ID_Transaccion] ASC,
+	[ID_Etiqueta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuario](
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Nombre_Usuario] [varchar](50) NULL,
+	[Password_Usuario] [varchar](128) NULL,
+	[Estado] [bit] NOT NULL,
+	[timestamp] [timestamp] NULL,
+	[ID_Configuracion_Usuario] [uniqueidentifier] NOT NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[ID_Usuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuario_Familia]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuario_Familia](
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[ID_Familia] [uniqueidentifier] NOT NULL,
+	[timestamp] [timestamp] NOT NULL,
+ CONSTRAINT [PK_Usuario_Familia] PRIMARY KEY CLUSTERED 
+(
+	[ID_Usuario] ASC,
+	[ID_Familia] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuario_Patente]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuario_Patente](
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[ID_Patente] [uniqueidentifier] NOT NULL,
+	[timestamp] [timestamp] NULL,
+ CONSTRAINT [PK_Usuario_Patente] PRIMARY KEY CLUSTERED 
+(
+	[ID_Usuario] ASC,
+	[ID_Patente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Variable]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Variable](
+	[ID_Variable] [uniqueidentifier] NOT NULL,
+	[Nombre_Variable] [varchar](50) NULL,
+	[Tipo_Variable] [varchar](50) NOT NULL,
+	[ID_Categoria] [uniqueidentifier] NULL,
+	[ID_Etiqueta] [uniqueidentifier] NULL,
+	[ID_Cuenta] [uniqueidentifier] NULL,
+	[ID_Transaccion] [uniqueidentifier] NULL,
+	[ID_Planificacion_Transaccion] [uniqueidentifier] NULL,
+	[ID_Plantilla_Transaccion] [uniqueidentifier] NULL,
+	[ID_Lapso] [uniqueidentifier] NULL,
+	[ID_Usuario] [uniqueidentifier] NOT NULL,
+	[Fecha] [datetime] NULL,
+ CONSTRAINT [PK_Variable] PRIMARY KEY CLUSTERED 
+(
+	[ID_Variable] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Configuracion_Usuario] ([ID_Configuracion_Usuario], [Divisa_Default], [Idioma], [Mantener_Sesion_Iniciada], [Alarmas_Windows], [Notificaciones_Windows], [Notificaciones_Presupuestos], [Notificaciones_Recordatorios], [Notificaciones_Estadisticas], [Notificaciones_Expiran], [Notificaciones_Expiran_Frecuencia], [Notificaciones_Expiran_Valor], [Respaldar], [Limite_Respaldos], [Respaldos_Cantidad_Maxima], [ID_FrecuenciaInicio_Respaldos]) VALUES (N'3f83c16a-9a6b-408b-bca0-f0c46d250b14', N'ARS', N'Español', 1, 1, 1, 1, 1, 1, 0, NULL, NULL, 0, 0, NULL, NULL)
+GO
+INSERT [dbo].[Familia] ([ID_Familia], [Nombre]) VALUES (N'68b0b044-2d1c-4e8f-9d16-ee8f52d555e9', N'Rol de Administrador')
+GO
+INSERT [dbo].[Familia_Patente] ([ID_Familia], [ID_Patente]) VALUES (N'68b0b044-2d1c-4e8f-9d16-ee8f52d555e9', N'4d492c82-29f2-4c56-931c-c25d0f61e5f9')
+GO
+INSERT [dbo].[Patente] ([ID_Patente], [Nombre], [Definicion]) VALUES (N'4d492c82-29f2-4c56-931c-c25d0f61e5f9', N'Permisos de Administrador', N'Acceso a roles del administrador')
+GO
+INSERT [dbo].[Usuario] ([ID_Usuario], [Nombre_Usuario], [Password_Usuario], [Estado], [ID_Configuracion_Usuario]) VALUES (N'80f0b743-a8d1-4b15-ab46-8fff7d655541', N'admin', N'abrete sesamo', 1, N'3f83c16a-9a6b-408b-bca0-f0c46d250b14')
+GO
+INSERT [dbo].[Usuario_Familia] ([ID_Usuario], [ID_Familia]) VALUES (N'80f0b743-a8d1-4b15-ab46-8fff7d655541', N'68b0b044-2d1c-4e8f-9d16-ee8f52d555e9')
+GO
+ALTER TABLE [dbo].[Caracteristica] ADD  CONSTRAINT [DF_Etiqueta_ID_Etiqueta]  DEFAULT (newid()) FOR [ID_Caracteristica]
+GO
+ALTER TABLE [dbo].[Configuracion_Usuario] ADD  CONSTRAINT [DF_Configuracion_Usuario_ID_Configuracion_Usuario]  DEFAULT (newid()) FOR [ID_Configuracion_Usuario]
+GO
+ALTER TABLE [dbo].[Cuenta] ADD  CONSTRAINT [DF_Cuenta_ID_Cuenta]  DEFAULT (newid()) FOR [ID_Cuenta]
+GO
+ALTER TABLE [dbo].[Expresion] ADD  CONSTRAINT [DF_Expresion_Cabecera_ID_Expresion_Cabecera]  DEFAULT (newid()) FOR [ID_Expresion]
+GO
+ALTER TABLE [dbo].[Familia] ADD  CONSTRAINT [DF_Familia_ID_Familia]  DEFAULT (newid()) FOR [ID_Familia]
+GO
+ALTER TABLE [dbo].[FrecuenciaInicio] ADD  CONSTRAINT [DF_FrecuenciaInicio_ID_FrecuenciaInicio]  DEFAULT (newid()) FOR [ID_FrecuenciaInicio]
+GO
+ALTER TABLE [dbo].[Lapso] ADD  CONSTRAINT [DF_Lapso_ID_Lapso]  DEFAULT (newid()) FOR [ID_Lapso]
+GO
+ALTER TABLE [dbo].[Notificacion] ADD  CONSTRAINT [DF_Notificacion_ID_Notificacion]  DEFAULT (newid()) FOR [ID_Notificacion]
+GO
+ALTER TABLE [dbo].[Patente] ADD  CONSTRAINT [DF_Patente_ID_Patente]  DEFAULT (newid()) FOR [ID_Patente]
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion] ADD  CONSTRAINT [DF_Planificacion_Transaccion_ID_Planificacion_Transaccion]  DEFAULT (newid()) FOR [ID_Planificacion_Transaccion]
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion] ADD  CONSTRAINT [DF_Plantilla_Transaccion_ID_Plantilla_Transaccion]  DEFAULT (newid()) FOR [ID_Plantilla_Transaccion]
+GO
+ALTER TABLE [dbo].[Presupuesto] ADD  CONSTRAINT [DF_Presupuesto_ID_Presupuesto]  DEFAULT (newid()) FOR [ID_Presupuesto]
+GO
+ALTER TABLE [dbo].[Recordatorio] ADD  CONSTRAINT [DF_Recordatorio_ID_Recordatorio]  DEFAULT (newid()) FOR [ID_Recordatorio]
+GO
+ALTER TABLE [dbo].[SesionTrack] ADD  CONSTRAINT [DF_SesionTrack_ID_SesionTrack]  DEFAULT (newid()) FOR [ID_SesionTrack]
+GO
+ALTER TABLE [dbo].[Transaccion] ADD  CONSTRAINT [DF_Transaccion_ID_Transaccion]  DEFAULT (newid()) FOR [ID_Transaccion]
+GO
+ALTER TABLE [dbo].[Usuario] ADD  CONSTRAINT [DF_Usuario_ID_Usuario]  DEFAULT (newid()) FOR [ID_Usuario]
+GO
+ALTER TABLE [dbo].[Variable] ADD  CONSTRAINT [DF_Variable_ID_Variable]  DEFAULT (newid()) FOR [ID_Variable]
+GO
+ALTER TABLE [dbo].[Caracteristica]  WITH CHECK ADD  CONSTRAINT [FK_Etiqueta_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Caracteristica] CHECK CONSTRAINT [FK_Etiqueta_Usuario]
+GO
+ALTER TABLE [dbo].[Configuracion_Usuario]  WITH CHECK ADD  CONSTRAINT [FK_Configuracion_Usuario_FrecuenciaInicio] FOREIGN KEY([ID_FrecuenciaInicio_Respaldos])
+REFERENCES [dbo].[FrecuenciaInicio] ([ID_FrecuenciaInicio])
+GO
+ALTER TABLE [dbo].[Configuracion_Usuario] CHECK CONSTRAINT [FK_Configuracion_Usuario_FrecuenciaInicio]
+GO
+ALTER TABLE [dbo].[Cuenta]  WITH CHECK ADD  CONSTRAINT [FK_Cuenta_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Cuenta] CHECK CONSTRAINT [FK_Cuenta_Usuario]
+GO
+ALTER TABLE [dbo].[Expresion]  WITH CHECK ADD  CONSTRAINT [FK_Expresion_Cabecera_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Expresion] CHECK CONSTRAINT [FK_Expresion_Cabecera_Usuario]
+GO
+ALTER TABLE [dbo].[Expresion_Variable]  WITH CHECK ADD  CONSTRAINT [FK_Expresion_Variable_Expresion] FOREIGN KEY([ID_Expresion])
+REFERENCES [dbo].[Expresion] ([ID_Expresion])
+GO
+ALTER TABLE [dbo].[Expresion_Variable] CHECK CONSTRAINT [FK_Expresion_Variable_Expresion]
+GO
+ALTER TABLE [dbo].[Expresion_Variable]  WITH CHECK ADD  CONSTRAINT [FK_Expresion_Variable_Variable] FOREIGN KEY([ID_Variable])
+REFERENCES [dbo].[Variable] ([ID_Variable])
+GO
+ALTER TABLE [dbo].[Expresion_Variable] CHECK CONSTRAINT [FK_Expresion_Variable_Variable]
+GO
+ALTER TABLE [dbo].[Familia_Familia]  WITH CHECK ADD  CONSTRAINT [FK_Familia_Familia_Familia] FOREIGN KEY([ID_Familia_Padre])
+REFERENCES [dbo].[Familia] ([ID_Familia])
+GO
+ALTER TABLE [dbo].[Familia_Familia] CHECK CONSTRAINT [FK_Familia_Familia_Familia]
+GO
+ALTER TABLE [dbo].[Familia_Familia]  WITH CHECK ADD  CONSTRAINT [FK_Familia_Familia_Familia1] FOREIGN KEY([ID_Familia_Hija])
+REFERENCES [dbo].[Familia] ([ID_Familia])
+GO
+ALTER TABLE [dbo].[Familia_Familia] CHECK CONSTRAINT [FK_Familia_Familia_Familia1]
+GO
+ALTER TABLE [dbo].[Familia_Patente]  WITH CHECK ADD  CONSTRAINT [FK_Familia_Patente_Familia] FOREIGN KEY([ID_Familia])
+REFERENCES [dbo].[Familia] ([ID_Familia])
+GO
+ALTER TABLE [dbo].[Familia_Patente] CHECK CONSTRAINT [FK_Familia_Patente_Familia]
+GO
+ALTER TABLE [dbo].[Familia_Patente]  WITH CHECK ADD  CONSTRAINT [FK_Familia_Patente_Patente] FOREIGN KEY([ID_Patente])
+REFERENCES [dbo].[Patente] ([ID_Patente])
+GO
+ALTER TABLE [dbo].[Familia_Patente] CHECK CONSTRAINT [FK_Familia_Patente_Patente]
+GO
+ALTER TABLE [dbo].[Notificacion]  WITH CHECK ADD  CONSTRAINT [FK_Notificacion_Presupuesto] FOREIGN KEY([ID_Presupuesto])
+REFERENCES [dbo].[Presupuesto] ([ID_Presupuesto])
+GO
+ALTER TABLE [dbo].[Notificacion] CHECK CONSTRAINT [FK_Notificacion_Presupuesto]
+GO
+ALTER TABLE [dbo].[Notificacion]  WITH CHECK ADD  CONSTRAINT [FK_Notificacion_Recordatorio] FOREIGN KEY([ID_Recordatorio])
+REFERENCES [dbo].[Recordatorio] ([ID_Recordatorio])
+GO
+ALTER TABLE [dbo].[Notificacion] CHECK CONSTRAINT [FK_Notificacion_Recordatorio]
+GO
+ALTER TABLE [dbo].[Notificacion]  WITH CHECK ADD  CONSTRAINT [FK_Notificacion_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Notificacion] CHECK CONSTRAINT [FK_Notificacion_Usuario]
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Planificacion_Transaccion_Caracteristica] FOREIGN KEY([ID_Categoria])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion] CHECK CONSTRAINT [FK_Planificacion_Transaccion_Caracteristica]
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Planificacion_Transaccion_Cuenta] FOREIGN KEY([ID_Cuenta])
+REFERENCES [dbo].[Cuenta] ([ID_Cuenta])
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion] CHECK CONSTRAINT [FK_Planificacion_Transaccion_Cuenta]
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Planificacion_Transaccion_Expresion_Cabecera] FOREIGN KEY([ID_Monto_Expresion])
+REFERENCES [dbo].[Expresion] ([ID_Expresion])
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion] CHECK CONSTRAINT [FK_Planificacion_Transaccion_Expresion_Cabecera]
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Planificacion_Transaccion_Recordatorio] FOREIGN KEY([ID_RecordatorioLigado])
+REFERENCES [dbo].[Recordatorio] ([ID_Recordatorio])
+GO
+ALTER TABLE [dbo].[Planificacion_Transaccion] CHECK CONSTRAINT [FK_Planificacion_Transaccion_Recordatorio]
+GO
+ALTER TABLE [dbo].[PlanificacionTransaccion_Etiqueta]  WITH CHECK ADD  CONSTRAINT [FK_PlanificacionTransaccion_Etiqueta_Etiqueta] FOREIGN KEY([ID_Etiqueta])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[PlanificacionTransaccion_Etiqueta] CHECK CONSTRAINT [FK_PlanificacionTransaccion_Etiqueta_Etiqueta]
+GO
+ALTER TABLE [dbo].[PlanificacionTransaccion_Etiqueta]  WITH CHECK ADD  CONSTRAINT [FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion] FOREIGN KEY([ID_Planificacion_Transaccion])
+REFERENCES [dbo].[Planificacion_Transaccion] ([ID_Planificacion_Transaccion])
+GO
+ALTER TABLE [dbo].[PlanificacionTransaccion_Etiqueta] CHECK CONSTRAINT [FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion]
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Plantilla_Transaccion_Caracteristica] FOREIGN KEY([ID_Categoria])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion] CHECK CONSTRAINT [FK_Plantilla_Transaccion_Caracteristica]
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Plantilla_Transaccion_Expresion_Cabecera] FOREIGN KEY([ID_Monto_Expresion])
+REFERENCES [dbo].[Expresion] ([ID_Expresion])
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion] CHECK CONSTRAINT [FK_Plantilla_Transaccion_Expresion_Cabecera]
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Plantilla_Transaccion_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Plantilla_Transaccion] CHECK CONSTRAINT [FK_Plantilla_Transaccion_Usuario]
+GO
+ALTER TABLE [dbo].[PlantillaTransaccion_Etiqueta]  WITH CHECK ADD  CONSTRAINT [FK_PlantillaTransaccion_Etiqueta_Etiqueta] FOREIGN KEY([ID_Etiqueta])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[PlantillaTransaccion_Etiqueta] CHECK CONSTRAINT [FK_PlantillaTransaccion_Etiqueta_Etiqueta]
+GO
+ALTER TABLE [dbo].[PlantillaTransaccion_Etiqueta]  WITH CHECK ADD  CONSTRAINT [FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion] FOREIGN KEY([ID_Plantilla_Transaccion])
+REFERENCES [dbo].[Plantilla_Transaccion] ([ID_Plantilla_Transaccion])
+GO
+ALTER TABLE [dbo].[PlantillaTransaccion_Etiqueta] CHECK CONSTRAINT [FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion]
+GO
+ALTER TABLE [dbo].[Presupuesto]  WITH CHECK ADD  CONSTRAINT [FK_Presupuesto_Expresion_Cabecera] FOREIGN KEY([ID_Condicion_Expresion])
+REFERENCES [dbo].[Expresion] ([ID_Expresion])
+GO
+ALTER TABLE [dbo].[Presupuesto] CHECK CONSTRAINT [FK_Presupuesto_Expresion_Cabecera]
+GO
+ALTER TABLE [dbo].[Presupuesto]  WITH CHECK ADD  CONSTRAINT [FK_Presupuesto_FrecuenciaInicio] FOREIGN KEY([ID_Lapso_Frecuencia])
+REFERENCES [dbo].[FrecuenciaInicio] ([ID_FrecuenciaInicio])
+GO
+ALTER TABLE [dbo].[Presupuesto] CHECK CONSTRAINT [FK_Presupuesto_FrecuenciaInicio]
+GO
+ALTER TABLE [dbo].[Presupuesto]  WITH CHECK ADD  CONSTRAINT [FK_Presupuesto_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Presupuesto] CHECK CONSTRAINT [FK_Presupuesto_Usuario]
+GO
+ALTER TABLE [dbo].[Presupuesto]  WITH CHECK ADD  CONSTRAINT [FK_Presupuesto_Variable] FOREIGN KEY([ID_Variable_Supervisada])
+REFERENCES [dbo].[Variable] ([ID_Variable])
+GO
+ALTER TABLE [dbo].[Presupuesto] CHECK CONSTRAINT [FK_Presupuesto_Variable]
+GO
+ALTER TABLE [dbo].[Recordatorio]  WITH CHECK ADD  CONSTRAINT [FK_Recordatorio_FrecuenciaInicio] FOREIGN KEY([ID_FrecuenciaInicio])
+REFERENCES [dbo].[FrecuenciaInicio] ([ID_FrecuenciaInicio])
+GO
+ALTER TABLE [dbo].[Recordatorio] CHECK CONSTRAINT [FK_Recordatorio_FrecuenciaInicio]
+GO
+ALTER TABLE [dbo].[Recordatorio]  WITH CHECK ADD  CONSTRAINT [FK_Recordatorio_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Recordatorio] CHECK CONSTRAINT [FK_Recordatorio_Usuario]
+GO
+ALTER TABLE [dbo].[SesionTrack]  WITH CHECK ADD  CONSTRAINT [FK_SesionTrack_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[SesionTrack] CHECK CONSTRAINT [FK_SesionTrack_Usuario]
+GO
+ALTER TABLE [dbo].[Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Transaccion_Caracteristica] FOREIGN KEY([ID_Categoria])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[Transaccion] CHECK CONSTRAINT [FK_Transaccion_Caracteristica]
+GO
+ALTER TABLE [dbo].[Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Transaccion_Cuenta] FOREIGN KEY([ID_Cuenta])
+REFERENCES [dbo].[Cuenta] ([ID_Cuenta])
+GO
+ALTER TABLE [dbo].[Transaccion] CHECK CONSTRAINT [FK_Transaccion_Cuenta]
+GO
+ALTER TABLE [dbo].[Transaccion]  WITH CHECK ADD  CONSTRAINT [FK_Transaccion_Expresion_Cabecera] FOREIGN KEY([ID_Monto_Expresion])
+REFERENCES [dbo].[Expresion] ([ID_Expresion])
+GO
+ALTER TABLE [dbo].[Transaccion] CHECK CONSTRAINT [FK_Transaccion_Expresion_Cabecera]
+GO
+ALTER TABLE [dbo].[Transaccion_Etiqueta]  WITH CHECK ADD  CONSTRAINT [FK_Transaccion_Etiqueta_Etiqueta] FOREIGN KEY([ID_Etiqueta])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[Transaccion_Etiqueta] CHECK CONSTRAINT [FK_Transaccion_Etiqueta_Etiqueta]
+GO
+ALTER TABLE [dbo].[Transaccion_Etiqueta]  WITH CHECK ADD  CONSTRAINT [FK_Transaccion_Etiqueta_Transaccion] FOREIGN KEY([ID_Transaccion])
+REFERENCES [dbo].[Transaccion] ([ID_Transaccion])
+GO
+ALTER TABLE [dbo].[Transaccion_Etiqueta] CHECK CONSTRAINT [FK_Transaccion_Etiqueta_Transaccion]
+GO
+ALTER TABLE [dbo].[Usuario]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Configuracion_Usuario] FOREIGN KEY([ID_Configuracion_Usuario])
+REFERENCES [dbo].[Configuracion_Usuario] ([ID_Configuracion_Usuario])
+GO
+ALTER TABLE [dbo].[Usuario] CHECK CONSTRAINT [FK_Usuario_Configuracion_Usuario]
+GO
+ALTER TABLE [dbo].[Usuario_Familia]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Familia_Familia] FOREIGN KEY([ID_Familia])
+REFERENCES [dbo].[Familia] ([ID_Familia])
+GO
+ALTER TABLE [dbo].[Usuario_Familia] CHECK CONSTRAINT [FK_Usuario_Familia_Familia]
+GO
+ALTER TABLE [dbo].[Usuario_Familia]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Familia_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Usuario_Familia] CHECK CONSTRAINT [FK_Usuario_Familia_Usuario]
+GO
+ALTER TABLE [dbo].[Usuario_Patente]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Patente_Patente] FOREIGN KEY([ID_Patente])
+REFERENCES [dbo].[Patente] ([ID_Patente])
+GO
+ALTER TABLE [dbo].[Usuario_Patente] CHECK CONSTRAINT [FK_Usuario_Patente_Patente]
+GO
+ALTER TABLE [dbo].[Usuario_Patente]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Patente_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Usuario_Patente] CHECK CONSTRAINT [FK_Usuario_Patente_Usuario]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Caracteristica] FOREIGN KEY([ID_Categoria])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Caracteristica]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Caracteristica1] FOREIGN KEY([ID_Etiqueta])
+REFERENCES [dbo].[Caracteristica] ([ID_Caracteristica])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Caracteristica1]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Cuenta] FOREIGN KEY([ID_Cuenta])
+REFERENCES [dbo].[Cuenta] ([ID_Cuenta])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Cuenta]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Lapso] FOREIGN KEY([ID_Lapso])
+REFERENCES [dbo].[Lapso] ([ID_Lapso])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Lapso]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Planificacion_Transaccion] FOREIGN KEY([ID_Planificacion_Transaccion])
+REFERENCES [dbo].[Planificacion_Transaccion] ([ID_Planificacion_Transaccion])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Planificacion_Transaccion]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Plantilla_Transaccion] FOREIGN KEY([ID_Plantilla_Transaccion])
+REFERENCES [dbo].[Plantilla_Transaccion] ([ID_Plantilla_Transaccion])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Plantilla_Transaccion]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Transaccion] FOREIGN KEY([ID_Transaccion])
+REFERENCES [dbo].[Transaccion] ([ID_Transaccion])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Transaccion]
+GO
+ALTER TABLE [dbo].[Variable]  WITH CHECK ADD  CONSTRAINT [FK_Variable_Usuario] FOREIGN KEY([ID_Usuario])
+REFERENCES [dbo].[Usuario] ([ID_Usuario])
+GO
+ALTER TABLE [dbo].[Variable] CHECK CONSTRAINT [FK_Variable_Usuario]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_limpieza_expresiones]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		&lt;Ezequiel Amorosino&gt;
+-- Create date: &lt;9/1/2022&gt;
+-- Description:	&lt;Limpia las expresiones en desuso (obsoletas)&gt;
+-- =============================================
+CREATE PROCEDURE [dbo].[sp_limpieza_expresiones]
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	--SET NOCOUNT ON;
+	declare @ids_expresiones_obsoletas table (id_auto int identity(1,1), id_expr uniqueidentifier)
+
+    INSERT INTO @ids_expresiones_obsoletas SELECT ID_Expresion FROM Expresion
+	WHERE NOT EXISTS (
+                   SELECT * 
+                     FROM Transaccion AS T1
+                    WHERE T1.ID_Monto_Expresion = Expresion.ID_Expresion
+					)
+	AND NOT EXISTS (
+    SELECT * 
+        FROM Planificacion_Transaccion AS T1
+    WHERE T1.ID_Monto_Expresion = Expresion.ID_Expresion
+	)
+	AND NOT EXISTS (
+    SELECT * 
+        FROM Plantilla_Transaccion AS T1
+    WHERE T1.ID_Monto_Expresion = Expresion.ID_Expresion
+	)
+	AND NOT EXISTS (
+    SELECT * 
+        FROM Presupuesto AS T1
+    WHERE T1.ID_Condicion_Expresion = Expresion.ID_Expresion
+	);
+
+	select * from @ids_expresiones_obsoletas 
+
+	--ANTES DE ELIMINAR LAS EXPRESIONES, DEBO ELIMINAR LAS VARIABLES QUE POSEEN
+	declare @ids_variables_obsoletas table (id_auto int identity(1,1), id_var uniqueidentifier)
+
+	INSERT INTO @ids_variables_obsoletas SELECT ID_Variable FROM Expresion_Variable
+	WHERE ID_Expresion IN (select id_expr from @ids_expresiones_obsoletas)
+
+	DELETE FROM Expresion_Variable WHERE ID_Expresion IN (select id_expr from @ids_expresiones_obsoletas)
+	
+	DELETE FROM Variable WHERE ID_Variable IN (select id_var from @ids_variables_obsoletas)
+
+	DELETE FROM Expresion WHERE ID_Expresion IN (select id_expr from @ids_expresiones_obsoletas)
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_limpieza_expresiones_y_variables]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		&lt;Ezequiel Amorosino&gt;
+-- Create date: &lt;9/1/2022&gt;
+-- Description:	&lt;Limpia las expresiones y variables en desuso (obsoletas)&gt;
+-- =============================================
+CREATE PROCEDURE [dbo].[sp_limpieza_expresiones_y_variables]
+AS
+BEGIN
+	exec sp_limpieza_variables
+	exec sp_limpieza_expresiones
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_limpieza_variables]    Script Date: 12/2/2022 14:55:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		&lt;Ezequiel Amorosino&gt;
+-- Create date: &lt;9/1/2022&gt;
+-- Description:	&lt;Limpia las variables en desuso (obsoletas)&gt;
+-- =============================================
+CREATE PROCEDURE [dbo].[sp_limpieza_variables]
+AS
+BEGIN
+	declare @ids_variables_obsoletas table (id_auto int identity(1,1), id_var uniqueidentifier)
+
+    INSERT INTO @ids_variables_obsoletas SELECT ID_Variable FROM Variable
+	WHERE NOT EXISTS (
+                   SELECT * 
+                     FROM Presupuesto AS T1
+                    WHERE T1.ID_Variable_Supervisada = Variable.ID_Variable
+					)
+	AND NOT EXISTS (
+    SELECT * 
+        FROM Expresion_Variable AS T1
+    WHERE T1.ID_Variable = Variable.ID_Variable
+	);
+					
+	select * from @ids_variables_obsoletas 
+
+	delete from Variable where ID_Variable IN (select id_var from @ids_variables_obsoletas)
+END
+GO
+USE [master]
+GO
+ALTER DATABASE [Budgee] SET  READ_WRITE 
+GO</value>
+  </data>
+  <data name="uninstall" xml:space="preserve">
+    <value>USE [master]
+GO
+IF EXISTS(SELECT * FROM sys.databases WHERE name = 'Budgee')
+BEGIN
+	EXEC msdb.dbo.sp_delete_database_backuphistory @database_name = N'Budgee'
+	ALTER DATABASE [Budgee] SET  SINGLE_USER WITH ROLLBACK IMMEDIATE
+	ALTER DATABASE [Budgee] SET  SINGLE_USER
+	DROP DATABASE [Budgee]
+END
+GO</value>
+  </data>
+</root>

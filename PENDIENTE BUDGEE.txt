@@ -1,0 +1,47 @@
+> PENDIENTE:
+	+ Instalador (AdvancedInstaller / VS Installer)
+	+ Manual Desarrollador (SandCastle)
+	
+	= Testear asincronicidad de varias formas
+	= Usuario pierde privilegios cada tanto. No puedo identificar donde sucede.
+
+	~ En menú de administrador: "Ver Logs"
+	~ integrar SystemNotificationService
+	~ Agregar cuenta de transaccion a plantilla. Formatear abm con divisa en monto.
+	~ Perfil de usuario premium (acceso a estadísticas, (?) expresiones variables)
+	~ Permitir crear divisas con nombre, abreviación y relación a otra divisa. 
+	~ Que valores globales (e.g.: balance global) no sea solo sumatoria, sino que evalue la relacion de divisas y lo exprese en una seleccionada (default de usuario?).
+	~ DGV datasource: Order By Column
+	~ reajustar valores de toda la cuenta por divisa
+	~ cambiar proyectos a DLL no .NET (para ver si deja de generar bin y obj)
+	~ Repositorio en memoria -> salto sustancial en performance
+	~ añadir logeo en tabla de sql
+	~ Diseñar e integrar SystemAlarmService. Service ejecuta la Alarma, pero no se abre el winform. Como instalar sin cmd? Se puede hacer desde otro programa. Como iniciar servicio al instalar? ServiceController desde otro programa.
+	~ Tabla SQL Alarm para guardar alarmas
+	~ Meter prediccion en Overview. Permitir elegir magnitud de tiempo a proyectar prediccion.
+	~ Transferencia entre usuarios
+	~ Transferencia entre cuentas
+	~ Generar sistema de Serial Key
+	~ En login: "Olvidé mi contraseña". Mandar mail con código para reestablecerla.
+	~ Filtros en seleccionar transac o planif
+	~ Filtro por fecha en transacciones
+	~ Filtro de frecuencia: 'Sin frecuencia'
+	~ En talonarios, en combos de seleccion (de cuenta, categoría, etc.), agregar botón de selec avanzada [...], derivando en seleccionar elem de eso.
+	~ En administracion de usuarios o perfiles, en perfiles/permisos relacionados, definir cual es perfil y cual permiso.
+	~ Encriptar backups
+	~ ctrl+z para establecer expresion
+	~ Hacer BudgeeEntities internal
+	~ Implementar mas threading
+	~ ocultar botones de cargar y guardar plantilla en ViewOnly
+	~ Tab de Agenda-Calendario. Muestra transacciones, planificaciones y recordatorios (se pueden filtrar para que no muestre todos) en un calendario.
+	~ Tipos de cuentas (caja ahorro, cuenta corriente, etc)
+	~ Tarjetas de débito o credito y medios de pago (transf. bancaria o por debitación/acreditación por tarjeta)	
+	~ Planificacion pueda generar transacciones pasadas en función de una fecha inicial hasta la fecha
+	~ Base de datos histórica para elementos estado 0 o para usuarios borrados y sus elementos.
+
+> PROBLEMATICAS:
+	- No puedo trabajar desde SL sobre No-SL. Remove de usuario no puede realizar remove sobre composiciones. SOLUCION: Usuario del negocio que contenga Usuario de la SL.
+
+
+mail comunicación:
+gaston.weingand@uai.edu.ar

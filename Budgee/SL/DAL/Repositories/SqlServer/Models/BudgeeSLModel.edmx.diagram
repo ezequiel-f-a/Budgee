@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5de1d145b2b24e5d8a4931716985aaeb" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="BudgeeModel.Familia" Width="1.5" PointX="5.375" PointY="6.75" />
+        <EntityTypeShape EntityType="BudgeeModel.Familia_Familia" Width="1.5" PointX="8.375" PointY="11.875" />
+        <EntityTypeShape EntityType="BudgeeModel.Familia_Patente" Width="1.5" PointX="7.625" PointY="6.875" />
+        <EntityTypeShape EntityType="BudgeeModel.Patente" Width="1.5" PointX="5.375" PointY="10.875" />
+        <EntityTypeShape EntityType="BudgeeModel.Usuario_Familia" Width="1.5" PointX="7.625" PointY="3.75" />
+        <EntityTypeShape EntityType="BudgeeModel.Usuario_Patente" Width="1.5" PointX="10.625" PointY="8.75" />
+        <AssociationConnector Association="BudgeeModel.FK_Familia_Familia_Familia" />
+        <AssociationConnector Association="BudgeeModel.FK_Familia_Familia_Familia1" />
+        <AssociationConnector Association="BudgeeModel.FK_Familia_Patente_Familia" />
+        <AssociationConnector Association="BudgeeModel.FK_Usuario_Familia_Familia" />
+        <AssociationConnector Association="BudgeeModel.FK_Familia_Patente_Patente" />
+        <AssociationConnector Association="BudgeeModel.FK_Usuario_Patente_Patente" />
+        <EntityTypeShape EntityType="BudgeeModel.SesionTrack" Width="1.5" PointX="3" PointY="11.625" />
+        <EntityTypeShape EntityType="BudgeeModel.Usuario" Width="1.5" PointX="5.25" PointY="16.25" />
+        <AssociationConnector Association="BudgeeModel.FK_SesionTrack_Usuario" />
+        <AssociationConnector Association="BudgeeModel.FK_Usuario_Familia_Usuario" />
+        <AssociationConnector Association="BudgeeModel.FK_Usuario_Patente_Usuario" />
+        <EntityTypeShape EntityType="BudgeeModel.Configuracion_Usuario" Width="1.5" PointX="3" PointY="1.75" />
+        <AssociationConnector Association="BudgeeModel.FK_Usuario_Configuracion_Usuario" />
+        <EntityTypeShape EntityType="BudgeeModel.Lapso" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="BudgeeModel.FrecuenciaInicio" Width="1.5" PointX="0.75" PointY="2.375" />
+        <AssociationConnector Association="BudgeeModel.FK_Configuracion_Usuario_FrecuenciaInicio" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

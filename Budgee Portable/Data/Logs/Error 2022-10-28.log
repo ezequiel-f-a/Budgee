@@ -1,0 +1,7 @@
+﻿2022-10-28 11:59:43,445 > (ERROR) [BLL.Services.SchedulerService]{<Start_TaskCollector_Thread>b__36_0}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.
+2022-10-28 12:01:01,492 > (ERROR) [BLL.Services.SchedulerService]{<Start_TaskCollector_Thread>b__36_0}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.
+2022-10-28 12:02:01,348 > (ERROR) [BLL.Services.SchedulerService]{<Start_TaskCollector_Thread>b__36_0}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.
+2022-10-28 12:10:32,636 > (ERROR) [BLL.Services.VariableService]{GetValue}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.
+2022-10-28 12:10:43,690 > (ERROR) [BLL.Services.VariableService]{GetValue}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.
+2022-10-28 12:10:55,984 > (ERROR) [BLL.Services.VariableService]{GetValue}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.
+2022-10-28 12:10:58,466 > (ERROR) [BLL.Services.VariableService]{GetValue}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.

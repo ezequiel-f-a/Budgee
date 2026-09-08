@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.Contracts.IGeneralRepository">
+            <summary>
+            Interfaz generica para acceso general de repositorio.
+            Tiene el propósito de realizar operaicones globales, como eliminar todos los elementos pertenecientes a un usuario.
+            </summary>
+        </member>
+        <member name="T:DAL.Factories.Factory">
+            <summary>
+            Factory que centraliza el acceso a datos, abstrayendo de que forma se realiza el acceso a datos.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.PlantillaTransaccionAdapter">
+            <summary>
+            Adapter de Plantilla de Transacción.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.PlanificacionAdapter">
+            <summary>
+            Adapter de Planificación.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.TransaccionAdapter">
+            <summary>
+            Adapter de Transacción.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.VariableAdapter">
+            <summary>
+            Adapter de Variable.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.ExpresionAdapter">
+            <summary>
+            Adapter de Expresión.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.PresupuestoAdapter">
+            <summary>
+            Adapter de Presupuesto.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.RecordatorioAdapter">
+            <summary>
+            Adapter de Recordatorio.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.NotificacionAdapter">
+            <summary>
+            Adapter de Notificación.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.CuentaAdapter">
+            <summary>
+            Adapter de Cuenta.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.Adapters.CaracteristicaAdapter">
+            <summary>
+            Adapter de Característica.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.GeneralRepository">
+            <summary>
+            Repositorio SQL Server para acceso general de repositorio.
+            Tiene el propósito de realizar operaicones globales, como eliminar todos los elementos pertenecientes a un usuario.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.PlantillaTransaccionRepository">
+            <summary>
+            Repositorio SQL Server de Plantilla de Transacción.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.PlanificacionRepository">
+            <summary>
+            Repositorio SQL Server de Planificación.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.TransaccionRepository">
+            <summary>
+            Repositorio SQL Server de Transacción.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.PresupuestoRepository">
+            <summary>
+            Repositorio SQL Server de Presupuesto.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.RecordatorioRepository">
+            <summary>
+            Repositorio SQL Server de Recordatorio.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.VariableRepository">
+            <summary>
+            Repositorio SQL Server de Variable.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.ExpresionRepository">
+            <summary>
+            Repositorio SQL Server de Expresión.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.NotificacionRepository">
+            <summary>
+            Repositorio SQL Server de Notificación.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.CuentaRepository">
+            <summary>
+            Repositorio SQL Server de Cuenta.
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.SqlServer.CaracteristicaRepository">
+            <summary>
+            Repositorio SQL Server de Característica.
+            </summary>
+        </member>
+    </members>
+</doc>

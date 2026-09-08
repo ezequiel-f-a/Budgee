@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Domain.Caracteristica">
+            <summary>
+            Propiedad asignable a transacciones.
+            Puede tratarse de categorías (sólo una por transacción) o etiquetas (varias por transacción).
+            </summary>
+        </member>
+        <member name="T:Domain.Cuenta">
+            <summary>
+            Elemento básico de contabilidad propio de cada usuario.
+            Un usuario puede poseer varias cuentas.
+            </summary>
+        </member>
+        <member name="T:Domain.Estadistica">
+            <summary>
+            Abstracción de estadísticas. Uso únicamente para tipado y herencia.
+            </summary>
+        </member>
+        <member name="T:Domain.Estadistica_Distribucion">
+            <summary>
+            Estadística de distribución.
+            Gráfico de torta.
+            Lo que se distribuye pueden ser ingresos, egresos o ganancia neta.
+            Ya sea distribución en cuentas, categorías o etiquetas.
+            </summary>
+        </member>
+        <member name="T:Domain.Estadistica_IngresoEgreso">
+            <summary>
+            Estadística de ingresos y egresos.
+            Gráfico lineal o columnas.
+            Muestra los ingresos, egresos, ingresos/egresos o ganancia neta en uná línea de tiempo.
+            </summary>
+        </member>
+        <member name="T:Domain.Estadistica_PatrimonioNeto">
+            <summary>
+            Estadística de patrimonio neto.
+            Gráfico lineal o columnas.
+            Muestra el patrimoño neto en una línea de tiempo.
+            </summary>
+        </member>
+        <member name="T:Domain.Estadistica_Overview">
+            <summary>
+            Estadística de overview.
+            No posee gráfico.
+            Muestra todas las cuentas junto a su balance actual y potencial (el potencial considera transacciones pendientes).
+            </summary>
+        </member>
+        <member name="T:Domain.Estadistica_Presupuesto">
+            <summary>
+            Estadística de holgura de presupuesto.
+            Gráfico de columnas.
+            Muestra, para determinado presupuesto seleccionado, su valor presupuestado en contraposición a su valor actual.
+            </summary>
+        </member>
+        <member name="T:Domain.Expresion">
+            <summary>
+            Bloque de datos que almacena un valor constante o expresión algebraica válida para el cálculo de un valor.
+            </summary>
+        </member>
+        <member name="T:Domain.GenericTransaccion">
+            <summary>
+            Abstracción de transacción.
+            </summary>
+        </member>
+        <member name="T:Domain.Notificacion">
+            <summary>
+            Notificación que será disparada por la aplicación.
+            Poseen una procedencia, lo cual facilita acceder a más detalles de la notificación si se desea.
+            </summary>
+        </member>
+        <member name="T:Domain.Planificacion">
+            <summary>
+            Permite la planificación de una transacción, ya sea para una fecha y hora dadas o bien para
+            una recurrencia especificable con el bloque de datos FrecuenciaInicio.
+            Puede ligarse a un recordatorio para que este se dispare cuando llegue el momento de generar la transacción.
+            </summary>
+        </member>
+        <member name="T:Domain.PlantillaTransaccion">
+            <summary>
+            Como su nombre lo indica, sirve de plantilla para la generación de transacciones o planificaciones.
+            Simplemente se utiliza para rellenar los campos deseados rápidamente.
+            </summary>
+        </member>
+        <member name="T:Domain.Presupuesto">
+            <summary>
+            Los presupuestos permiten controlar el flujo de transacciones, dando la posibilidad de informar al usuario
+            cuando se presente una condición específica (e.g.: balance de cuenta X superior a Y, ingreso global superior
+            a Y, ganancia neta por categoría X y etiqueta Y del último mes inferior o igual a balance de cuenta Z en fecha W).
+            El chequeo del flujo de transacciones puede ser constante, al finalizar el presupuesto o al iniciar.
+            </summary>
+        </member>
+        <member name="T:Domain.Recordatorio">
+            <summary>
+            Los recordatorios permiten informar al usuario de determinado evento, ya sea para una fecha y hora dadas 
+            o bien para una recurrencia especificable con el bloque de datos FrecuenciaInicio.
+            </summary>
+        </member>
+        <member name="T:Domain.Transaccion">
+            <summary>
+            Las transacciones son el centro de la contabilidad de la aplicación.
+            Estas pueden estar en estado "pendiente" o "concretado". Las pendientes no tienen influencia sobre
+            el balance, ingresos, chequeo de presupuestos, etc.
+            </summary>
+        </member>
+        <member name="T:Domain.Variable">
+            <summary>
+            Las variables nos permitirán proporcionar un valor dinámico y muy parametrizable
+            (e.g.: balance de cuenta X, ingreso global, ganancia neta por categoría X y etiqueta Y del último mes, 
+            balance de cuenta X en fecha Y).
+            </summary>
+        </member>
+    </members>
+</doc>

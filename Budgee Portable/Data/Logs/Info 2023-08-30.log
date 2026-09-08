@@ -1,0 +1,24 @@
+﻿2023-08-30 15:19:54,089 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 80f0b743-a8d1-4b15-ab46-8fff7d655541
+2023-08-30 15:19:54,143 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicio de sesión
+2023-08-30 15:19:54,264 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2023-08-30 15:19:54,272 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (comienzo de proceso)
+2023-08-30 15:19:54,395 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (fin de proceso)
+2023-08-30 15:19:54,397 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (inicio de proceso)
+2023-08-30 15:19:54,441 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (fin de proceso)
+2023-08-30 15:19:54,442 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (fin de proceso)
+2023-08-30 15:20:18,962 > (INFO) [UI.Forms.f_Main]{stripBut2_RestaurarDesdeRespaldo_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Restauración desde respaldo (comienzo de proceso)
+2023-08-30 15:20:19,016 > (INFO) [BLL.Services.BackupService]{RestoreFromBackup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Restauración desde respaldo - vaciar usuario (comienzo de proceso)
+2023-08-30 15:20:19,289 > (INFO) [BLL.Services.BackupService]{RestoreFromBackup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Restauración desde respaldo - vaciar usuario (fin de proceso)
+2023-08-30 15:20:19,290 > (INFO) [BLL.Services.BackupService]{RestoreFromBackup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Restauración desde respaldo - cargar usuario (comienzo de proceso)
+2023-08-30 15:20:22,197 > (INFO) [BLL.Services.BackupService]{CargarUsuario}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Restauración desde respaldo - cargar usuario (fin de proceso)
+2023-08-30 15:20:22,197 > (INFO) [UI.Forms.f_Main]{stripBut2_RestaurarDesdeRespaldo_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Restauración desde respaldo (fin de proceso)
+2023-08-30 15:20:23,513 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Cierre de sesión
+2023-08-30 15:20:42,229 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 80f0b743-a8d1-4b15-ab46-8fff7d655541
+2023-08-30 15:20:42,260 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicio de sesión
+2023-08-30 15:20:42,379 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2023-08-30 15:20:42,390 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (comienzo de proceso)
+2023-08-30 15:20:42,922 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (fin de proceso)
+2023-08-30 15:20:42,923 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (inicio de proceso)
+2023-08-30 15:20:42,977 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (fin de proceso)
+2023-08-30 15:20:42,978 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (fin de proceso)
+2023-08-30 15:39:11,626 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Cierre de sesión

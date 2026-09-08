@@ -1,0 +1,2 @@
+﻿2023-09-20 19:52:31,290 > (ERROR) [BLL.Services.SchedulerService]{<Start_TaskCollector_Thread>b__36_0}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Referencia a objeto no establecida como instancia de un objeto.
+2023-09-20 20:30:18,537 > (ERROR) [BLL.Services.SchedulerService]{<Start_TaskCollector_Thread>b__36_0}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Referencia a objeto no establecida como instancia de un objeto.

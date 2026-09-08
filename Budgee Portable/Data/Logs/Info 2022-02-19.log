@@ -1,0 +1,20 @@
+﻿2022-02-19 19:08:24,588 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 40c2462b-be8b-429a-8b0e-a5a2381e6cc8
+2022-02-19 19:08:24,629 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicio de sesión
+2022-02-19 19:08:24,758 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2022-02-19 19:08:24,806 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (comienzo de proceso)
+2022-02-19 19:08:25,779 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (fin de proceso)
+2022-02-19 19:08:25,781 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (inicio de proceso)
+2022-02-19 19:08:25,834 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (fin de proceso)
+2022-02-19 19:08:25,834 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (fin de proceso)
+2022-02-19 19:08:28,808 > (INFO) [BLL.Services.BackupService]{GenerateScheduledBackup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Creación de respaldo (comienzo de proceso)
+2022-02-19 19:08:30,046 > (INFO) [BLL.Services.BackupService]{GenerateScheduledBackup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Creación de respaldo (fin de proceso)
+2022-02-19 19:08:37,815 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Cierre de sesión
+2022-02-19 19:09:10,469 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 40c2462b-be8b-429a-8b0e-a5a2381e6cc8
+2022-02-19 19:09:10,505 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicio de sesión
+2022-02-19 19:09:10,631 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2022-02-19 19:09:10,687 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (comienzo de proceso)
+2022-02-19 19:09:11,713 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (fin de proceso)
+2022-02-19 19:09:11,714 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (inicio de proceso)
+2022-02-19 19:09:11,790 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (fin de proceso)
+2022-02-19 19:09:11,791 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (fin de proceso)
+2022-02-19 19:09:19,425 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Cierre de sesión

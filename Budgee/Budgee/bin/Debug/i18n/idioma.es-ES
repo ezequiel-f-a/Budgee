@@ -1,0 +1,68 @@
+{
+  "translations": [
+    {
+      "Key": "Login",
+      "Translated": "Inicio de Sesión"
+    },
+    {
+      "Key": "TipoOperacion",
+      "Translated": "Tipo Operación"
+    },
+    {
+      "Key": "MontoExpresion",
+      "Translated": "Monto"
+    },
+    {
+      "Key": "Informacion",
+      "Translated": "Información"
+    },
+    {
+      "Key": "Fecha_Emision",
+      "Translated": "Fecha Emisión"
+    },
+    {
+      "Key": "Descripcion",
+      "Translated": "Descripción"
+    },
+    {
+      "Key": "Categoria",
+      "Translated": "Categoría"
+    },
+    {
+      "Key": "FrecuenciaInicio",
+      "Translated": "Frecuencia e Inicio"
+    },
+    {
+      "Key": "QuitarAlConcluir",
+      "Translated": "Quitar Al Concluir"
+    },
+    {
+      "Key": "VariableSupervisada",
+      "Translated": "Variable Supervisada"
+    },
+    {
+      "Key": "OperadorRelacional",
+      "Translated": "..."
+    },
+    {
+      "Key": "CondicionExpresion",
+      "Translated": "Condición"
+    },
+    {
+      "Key": "LapsoPresupuesto",
+      "Translated": "Lapso Presupuesto"
+    },
+    {
+      "Key": "CuandoChequear",
+      "Translated": "Cuando Chequear"
+    },
+    {
+      "Key": "Balance_Potencial",
+      "Translated": "Balance Potencial"
+    },
+    {
+      "Key": "Preview Resultado",
+      "Translated": "Previsualizar Resultado"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Enums</name>
+    </assembly>
+    <members>
+        <member name="T:Enums.Tipo_Estadistica">
+            <summary>
+            Tipos de estadística disponibles.
+            </summary>
+        </member>
+        <member name="T:Enums.Dia_de_la_Semana">
+            <summary>
+            Dias de la semana
+            </summary>
+        </member>
+        <member name="T:Enums.Dia_del_Mes">
+            <summary>
+            Dias del mes. Posee del 1 al 28 y "Último", "Penúltimo" y "Antepenúltimo" para englobar los dias de todos los meses.
+            </summary>
+        </member>
+        <member name="T:Enums.Cuando_Chequear">
+            <summary>
+            Alternativas de chequeo de presupuesto.
+            </summary>
+        </member>
+        <member name="T:Enums.ColorBasico">
+            <summary>
+            Colores utilizables en la aplicación.
+            </summary>
+        </member>
+        <member name="T:Enums.Divisa">
+            <summary>
+            Divisas utilizables en la aplicación.
+            </summary>
+        </member>
+        <member name="T:Enums.Frecuencia">
+            <summary>
+            Magnitud de frecuencia de tiempo.
+            </summary>
+        </member>
+        <member name="T:Enums.Operador_Relacional">
+            <summary>
+            Operador relacional utilizable para la condición de los presupuestos.
+            </summary>
+        </member>
+        <member name="T:Enums.Mes">
+            <summary>
+            Meses del año.
+            </summary>
+        </member>
+        <member name="T:Enums.FrecuenciaSimplificada">
+            <summary>
+            Magnitud de frecuencia de tiempo con las opciones seleccionables de cara a usuario.
+            </summary>
+        </member>
+        <member name="T:Enums.Tipo_Expresion">
+            <summary>
+            Tipos de expresión.
+            </summary>
+        </member>
+        <member name="T:Enums.Procedencia_Notificacion">
+            <summary>
+            Procedencias posibles de una notificación.
+            </summary>
+        </member>
+        <member name="T:Enums.Tipo_Caracteristica">
+            <summary>
+            Tipo de característica.
+            </summary>
+        </member>
+        <member name="T:Enums.Idioma">
+            <summary>
+            Idiomas disponibles en la aplicación.
+            </summary>
+        </member>
+        <member name="T:Enums.Tipo_Operacion">
+            <summary>
+            Tipos de operación asignables a las transacciones.
+            </summary>
+        </member>
+        <member name="T:Enums.Tipo_Track">
+            <summary>
+            Tipo de tracking de sesión.
+            </summary>
+        </member>
+        <member name="T:Enums.Variable_Target">
+            <summary>
+            Elementos a los que puede apuntar una variable.
+            </summary>
+        </member>
+        <member name="T:Enums.Tipo_Variable">
+            <summary>
+            Tipos de variable utilizables en expresiones o en la variable supervisada de un presupuesto.
+            </summary>
+        </member>
+        <member name="T:Enums.Tipo_Lapso">
+            <summary>
+            Lapsos de uso común. Adicionalmente la alternativa "Intervalo" para establecer un lapso entre dos fechas.
+            </summary>
+        </member>
+    </members>
+</doc>

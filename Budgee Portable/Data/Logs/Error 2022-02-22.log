@@ -1,0 +1,2 @@
+﻿2022-02-22 19:12:09,881 > (ERROR) [SL.DAL.Repositories.SqlServer.SesionTrackRepository]{GetAll}(User:N/A):: Unable to load the specified metadata resource.
+2022-02-22 19:12:10,099 > (ERROR) [SL.BLL.Services.SesionTrackService]{GetAll}(User:N/A):: [1] Error relacionado con la base de datos [2] Error inesperado relacionado con la base de datos [3] Unable to load the specified metadata resource.

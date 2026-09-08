@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SL</name>
+    </assembly>
+    <members>
+        <member name="T:SL.BLL.Contracts.IGenericBusinessLogic`1">
+            <summary>
+            Interfaz generica para servicios del negocio, donde T es la entidad de dominio.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:SL.BLL.Services.SesionTrackService">
+            <summary>
+            Servicio del negocio de SesionTrack.
+            </summary>
+        </member>
+        <member name="T:SL.BLL.Services.UsuarioService">
+            <summary>
+            Servicio del negocio de Usuario.
+            </summary>
+        </member>
+        <member name="T:SL.BLL.Services.FrecuenciaInicioService">
+            <summary>
+            Servicio del negocio de FrecuenciaInicio.
+            </summary>
+        </member>
+        <member name="T:SL.BLL.Services.FamiliaService">
+            <summary>
+            Servicio del negocio de Familia.
+            </summary>
+        </member>
+        <member name="T:SL.BLL.Services.PatenteService">
+            <summary>
+            Servicio del negocio de Patente.
+            </summary>
+        </member>
+        <member name="T:SL.BLL.Services.LapsoService">
+            <summary>
+            Servicio del negocio de Lapso.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Contracts.IGenericAdapter`2">
+            <summary>
+            Interfaz generica para adapter, donde T es una entidad de dominio y U es su contraparte respectiva de EntityFramework.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+        </member>
+        <member name="T:SL.DAL.Contracts.IGenericRepository`1">
+            <summary>
+            Interfaz generica para repositorios, donde T es la entidad de dominio.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:SL.DAL.Factories.Factory">
+            <summary>
+            Factory que centraliza el acceso a datos, abstrayendo de que forma se realiza el acceso a datos.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.Adapters.SesionTrackAdapter">
+            <summary>
+            Adapter de SesionTrack.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.Adapters.UsuarioAdapter">
+            <summary>
+            Adapter de Usuario y ConfiguracionUsuario.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.Adapters.FamiliaAdapter">
+            <summary>
+            Adapter de Familia.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.Adapters.FrecuenciaInicioAdapter">
+            <summary>
+            Adapter de FrecuenciaInicio.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.Adapters.PatenteAdapter">
+            <summary>
+            Adapter de Patente.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.Adapters.LapsoAdapter">
+            <summary>
+            Adapter de Lapso.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.SesionTrackRepository">
+            <summary>
+            Repositorio SQL Server de SesionTrack.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.UsuarioRepository">
+            <summary>
+            Repositorio SQL Server de Usuario.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.FrecuenciaInicioRepository">
+            <summary>
+            Repositorio SQL Server de FrecuenciaInicio.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.FamiliaRepository">
+            <summary>
+            Repositorio SQL Server de Familia.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.PatenteRepository">
+            <summary>
+            Repositorio SQL Server de Patente.
+            </summary>
+        </member>
+        <member name="T:SL.DAL.Repositories.SqlServer.LapsoRepository">
+            <summary>
+            Repositorio SQL Server de Lapso.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.UI_Exception">
+            <summary>
+            Excepción de interfaz de usuario. Uso únicamente para tipado o herencia.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.DAL_Exception">
+            <summary>
+            Excepción del acceso a datos. Uso únicamente para tipado o herencia.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.BLL_Exception">
+            <summary>
+            Excepción del negocio. Uso únicamente para tipado o herencia.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.FrecuenciaInicio">
+            <summary>
+            Bloque de datos que puede poseer tanto una fecha en particular como una frecuencia con cierta magnitud y valor
+            (e.g.: Lunes cada 2 semanas, último día todos los meses, todos los días a las 18hs).
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Lapso">
+            <summary>
+            Lapso que comprende un periodo de tiempo. Puede ser un intervalo (entre dos fechas) o un periodo de tiempo a partir
+            de la fecha actual (e.g.: este día, esta semana, este mes, este cuatrimestre)
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Security.ConfiguracionUsuario">
+            <summary>
+            Preferencias del usuario.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Security.Familia">
+            <summary>
+            Perfiles/Roles de la aplicación.
+            Pueden poseer permisos (por lo que aquel que posea el perfil poseera los permisos), o anidar otros
+            perfiles (cuyos permisos también serán propios de el perfil que lo anida).
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Security.Patente">
+            <summary>
+            Permisos de la aplicación.
+            Con estos se acceden a ciertas características de la aplicación dependiendo de cual se tenga.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Security.Privilegio">
+            <summary>
+            Abstracción para perfiles y permisos de la aplicación.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Security.SesionTrack">
+            <summary>
+            Bloque de datos de tracking de sesión de usuario.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.Security.Usuario">
+            <summary>
+            Usuario de la aplicación.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.TaskTimer">
+            <summary>
+            Temporizador que permite ejecutar determinada acción en un hilo propio cada determinado tiempo.
+            También permite incluir una cantidad de iteraciones máximas.
+            </summary>
+        </member>
+        <member name="T:SL.Domain.UniqueList`1">
+            <summary>
+            Lista con elementos únicos, es decir, irrepetibles.
+            No lanza excepción al agregar elementos existentes, solamente impide que se agreguen los mismos.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:SL.Services.AppData">
+            <summary>
+            Se encarga de alojar variables globales tales como el usuario actual que se encuentra en sesión, el idioma actual,
+            y cualquier variable que provenga del App.Config.
+            </summary>
+        </member>
+        <member name="T:SL.Services.CalculatorService">
+            <summary>
+            Permite la resolución y validación de expresiones algebraicas, incluyendo el uso de variables.
+            </summary>
+        </member>
+        <member name="T:SL.Services.ConversionService">
+            <summary>
+            Se encarga de cualquier conversión de un tipo de dato a otro, o inclusive de transformación de elementos en
+            memoria a archivos planos (e.g.: DataTable a PDF).
+            </summary>
+        </member>
+        <member name="T:SL.Services.CryptographyService">
+            <summary>
+            Brinda funciones de encriptación y hashing.
+            </summary>
+        </member>
+        <member name="T:SL.Services.EnumHelper">
+            <summary>
+            Brinda una amplia gama de herramientas útiles para la gestión de enums.
+            </summary>
+        </member>
+        <member name="T:SL.Services.ExceptionService">
+            <summary>
+            Permite la gestión y manejo de excepciones, loggeando a su vez información de las mismas.
+            </summary>
+        </member>
+        <member name="M:SL.Services.ExceptionService.Handle(System.Exception,System.Object,System.Int32)">
+            <summary>
+            Handle para clases instanciables
+            </summary>
+            <param name="sender"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:SL.Services.ExceptionService.Handle(System.Exception,System.Type,System.Int32)">
+            <summary>
+            Handle para clases estáticas
+            </summary>
+            <param name="senderType"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="T:SL.Services.HelpService">
+            <summary>
+            Brinda servicios relacionados al Help Provider de la aplicación
+            </summary>
+        </member>
+        <member name="T:SL.Services.LanguageService">
+            <summary>
+            Brinda un servicio de traducción entre los lenguajes disponibles para un conjunto de palabras/oraciones específicas.
+            </summary>
+        </member>
+        <member name="T:SL.Services.LanguageService.Language">
+            <summary>
+            Bloque de datos que permite almacenar traducciones.
+            </summary>
+        </member>
+        <member name="T:SL.Services.LanguageService.Translation">
+            <summary>
+            Bloque de datos que permite almacenar una traducción para determinada palabra/oración.
+            </summary>
+        </member>
+        <member name="T:SL.Services.LogService">
+            <summary>
+            Brinda un servicio de loggeo, parametrizable a través del App.Config.
+            </summary>
+        </member>
+        <member name="T:SL.Services.SerializationService">
+            <summary>
+            Brinda el servicio de serialización (Json y binaria). 
+            También facilita la exportación e importación de elementos serializados.
+            </summary>
+        </member>
+        <member name="T:SL.Services.SqlHelper">
+            <summary>
+            Brinda una amplia gama de herramientas útiles relacionadas a SQL.
+            </summary>
+        </member>
+        <member name="M:SL.Services.SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Set the connection, command, and then execute the command and only return one value.
+            </summary>
+        </member>
+        <member name="M:SL.Services.SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Set the connection, command, and then execute the command with query and return the reader.
+            </summary>
+        </member>
+        <member name="T:SL.Services.SystemNotificationService">
+            <summary>
+            Brinda el servicio de notificaciones de Windows ("Toast Notification").
+            </summary>
+        </member>
+        <member name="T:SL.Services.SystemNotificationService.SystemNotification">
+            <summary>
+            Bloque de datos que posee la información para disparar una notificación de Windows.
+            </summary>
+        </member>
+        <member name="T:SL.Services.UIManager">
+            <summary>
+            Brinda una amplia gama de herramientas útiles para la gestión de UI.
+            </summary>
+        </member>
+    </members>
+</doc>

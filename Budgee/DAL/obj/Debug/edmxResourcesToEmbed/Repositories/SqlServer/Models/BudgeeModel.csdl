@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BudgeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BudgeeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cuenta" EntityType="BudgeeModel.Cuenta" />
+    <EntitySet Name="Expresion" EntityType="BudgeeModel.Expresion" />
+    <EntitySet Name="Expresion_Variable" EntityType="BudgeeModel.Expresion_Variable" />
+    <EntitySet Name="Notificacion" EntityType="BudgeeModel.Notificacion" />
+    <EntitySet Name="PlanificacionTransaccion_Etiqueta" EntityType="BudgeeModel.PlanificacionTransaccion_Etiqueta" />
+    <EntitySet Name="PlantillaTransaccion_Etiqueta" EntityType="BudgeeModel.PlantillaTransaccion_Etiqueta" />
+    <EntitySet Name="Transaccion" EntityType="BudgeeModel.Transaccion" />
+    <EntitySet Name="Transaccion_Etiqueta" EntityType="BudgeeModel.Transaccion_Etiqueta" />
+    <AssociationSet Name="FK_Transaccion_Cuenta" Association="BudgeeModel.FK_Transaccion_Cuenta">
+      <End Role="Cuenta" EntitySet="Cuenta" />
+      <End Role="Transaccion" EntitySet="Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Expresion_Variable_Expresion" Association="BudgeeModel.FK_Expresion_Variable_Expresion">
+      <End Role="Expresion" EntitySet="Expresion" />
+      <End Role="Expresion_Variable" EntitySet="Expresion_Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaccion_Expresion_Cabecera" Association="BudgeeModel.FK_Transaccion_Expresion_Cabecera">
+      <End Role="Expresion" EntitySet="Expresion" />
+      <End Role="Transaccion" EntitySet="Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaccion_Etiqueta_Transaccion" Association="BudgeeModel.FK_Transaccion_Etiqueta_Transaccion">
+      <End Role="Transaccion" EntitySet="Transaccion" />
+      <End Role="Transaccion_Etiqueta" EntitySet="Transaccion_Etiqueta" />
+    </AssociationSet>
+    <EntitySet Name="Caracteristica" EntityType="BudgeeModel.Caracteristica" />
+    <AssociationSet Name="FK_PlanificacionTransaccion_Etiqueta_Etiqueta" Association="BudgeeModel.FK_PlanificacionTransaccion_Etiqueta_Etiqueta">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="PlanificacionTransaccion_Etiqueta" EntitySet="PlanificacionTransaccion_Etiqueta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlantillaTransaccion_Etiqueta_Etiqueta" Association="BudgeeModel.FK_PlantillaTransaccion_Etiqueta_Etiqueta">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="PlantillaTransaccion_Etiqueta" EntitySet="PlantillaTransaccion_Etiqueta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaccion_Caracteristica" Association="BudgeeModel.FK_Transaccion_Caracteristica">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="Transaccion" EntitySet="Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaccion_Etiqueta_Etiqueta" Association="BudgeeModel.FK_Transaccion_Etiqueta_Etiqueta">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="Transaccion_Etiqueta" EntitySet="Transaccion_Etiqueta" />
+    </AssociationSet>
+    <EntitySet Name="Planificacion_Transaccion" EntityType="BudgeeModel.Planificacion_Transaccion" />
+    <EntitySet Name="Recordatorio" EntityType="BudgeeModel.Recordatorio" />
+    <AssociationSet Name="FK_Planificacion_Transaccion_Caracteristica" Association="BudgeeModel.FK_Planificacion_Transaccion_Caracteristica">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="Planificacion_Transaccion" EntitySet="Planificacion_Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Planificacion_Transaccion_Cuenta" Association="BudgeeModel.FK_Planificacion_Transaccion_Cuenta">
+      <End Role="Cuenta" EntitySet="Cuenta" />
+      <End Role="Planificacion_Transaccion" EntitySet="Planificacion_Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Planificacion_Transaccion_Expresion_Cabecera" Association="BudgeeModel.FK_Planificacion_Transaccion_Expresion_Cabecera">
+      <End Role="Expresion" EntitySet="Expresion" />
+      <End Role="Planificacion_Transaccion" EntitySet="Planificacion_Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notificacion_Recordatorio" Association="BudgeeModel.FK_Notificacion_Recordatorio">
+      <End Role="Recordatorio" EntitySet="Recordatorio" />
+      <End Role="Notificacion" EntitySet="Notificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Planificacion_Transaccion_Recordatorio" Association="BudgeeModel.FK_Planificacion_Transaccion_Recordatorio">
+      <End Role="Recordatorio" EntitySet="Recordatorio" />
+      <End Role="Planificacion_Transaccion" EntitySet="Planificacion_Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion" Association="BudgeeModel.FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion">
+      <End Role="Planificacion_Transaccion" EntitySet="Planificacion_Transaccion" />
+      <End Role="PlanificacionTransaccion_Etiqueta" EntitySet="PlanificacionTransaccion_Etiqueta" />
+    </AssociationSet>
+    <EntitySet Name="Plantilla_Transaccion" EntityType="BudgeeModel.Plantilla_Transaccion" />
+    <AssociationSet Name="FK_Plantilla_Transaccion_Caracteristica" Association="BudgeeModel.FK_Plantilla_Transaccion_Caracteristica">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="Plantilla_Transaccion" EntitySet="Plantilla_Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Plantilla_Transaccion_Expresion_Cabecera" Association="BudgeeModel.FK_Plantilla_Transaccion_Expresion_Cabecera">
+      <End Role="Expresion" EntitySet="Expresion" />
+      <End Role="Plantilla_Transaccion" EntitySet="Plantilla_Transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion" Association="BudgeeModel.FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion">
+      <End Role="Plantilla_Transaccion" EntitySet="Plantilla_Transaccion" />
+      <End Role="PlantillaTransaccion_Etiqueta" EntitySet="PlantillaTransaccion_Etiqueta" />
+    </AssociationSet>
+    <EntitySet Name="Presupuesto" EntityType="BudgeeModel.Presupuesto" />
+    <AssociationSet Name="FK_Presupuesto_Expresion_Cabecera" Association="BudgeeModel.FK_Presupuesto_Expresion_Cabecera">
+      <End Role="Expresion" EntitySet="Expresion" />
+      <End Role="Presupuesto" EntitySet="Presupuesto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notificacion_Presupuesto" Association="BudgeeModel.FK_Notificacion_Presupuesto">
+      <End Role="Presupuesto" EntitySet="Presupuesto" />
+      <End Role="Notificacion" EntitySet="Notificacion" />
+    </AssociationSet>
+    <EntitySet Name="Variable" EntityType="BudgeeModel.Variable" />
+    <AssociationSet Name="FK_Variable_Caracteristica" Association="BudgeeModel.FK_Variable_Caracteristica">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="Variable" EntitySet="Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Variable_Caracteristica1" Association="BudgeeModel.FK_Variable_Caracteristica1">
+      <End Role="Caracteristica" EntitySet="Caracteristica" />
+      <End Role="Variable" EntitySet="Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Variable_Cuenta" Association="BudgeeModel.FK_Variable_Cuenta">
+      <End Role="Cuenta" EntitySet="Cuenta" />
+      <End Role="Variable" EntitySet="Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Expresion_Variable_Variable" Association="BudgeeModel.FK_Expresion_Variable_Variable">
+      <End Role="Variable" EntitySet="Variable" />
+      <End Role="Expresion_Variable" EntitySet="Expresion_Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Variable_Planificacion_Transaccion" Association="BudgeeModel.FK_Variable_Planificacion_Transaccion">
+      <End Role="Planificacion_Transaccion" EntitySet="Planificacion_Transaccion" />
+      <End Role="Variable" EntitySet="Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Variable_Plantilla_Transaccion" Association="BudgeeModel.FK_Variable_Plantilla_Transaccion">
+      <End Role="Plantilla_Transaccion" EntitySet="Plantilla_Transaccion" />
+      <End Role="Variable" EntitySet="Variable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presupuesto_Variable" Association="BudgeeModel.FK_Presupuesto_Variable">
+      <End Role="Variable" EntitySet="Variable" />
+      <End Role="Presupuesto" EntitySet="Presupuesto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Variable_Transaccion" Association="BudgeeModel.FK_Variable_Transaccion">
+      <End Role="Transaccion" EntitySet="Transaccion" />
+      <End Role="Variable" EntitySet="Variable" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cuenta">
+    <Key>
+      <PropertyRef Name="ID_Cuenta" />
+    </Key>
+    <Property Name="ID_Cuenta" Type="Guid" Nullable="false" />
+    <Property Name="Nombre_Cuenta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Divisa" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Admite_Fondos_Negativos" Type="Boolean" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Transaccion" Relationship="BudgeeModel.FK_Transaccion_Cuenta" FromRole="Cuenta" ToRole="Transaccion" />
+    <NavigationProperty Name="Planificacion_Transaccion" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Cuenta" FromRole="Cuenta" ToRole="Planificacion_Transaccion" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Variable_Cuenta" FromRole="Cuenta" ToRole="Variable" />
+  </EntityType>
+  <EntityType Name="Expresion">
+    <Key>
+      <PropertyRef Name="ID_Expresion" />
+    </Key>
+    <Property Name="ID_Expresion" Type="Guid" Nullable="false" />
+    <Property Name="Definicion" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Expresion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Expresion_Variable" Relationship="BudgeeModel.FK_Expresion_Variable_Expresion" FromRole="Expresion" ToRole="Expresion_Variable" />
+    <NavigationProperty Name="Transaccion" Relationship="BudgeeModel.FK_Transaccion_Expresion_Cabecera" FromRole="Expresion" ToRole="Transaccion" />
+    <NavigationProperty Name="Planificacion_Transaccion" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Expresion_Cabecera" FromRole="Expresion" ToRole="Planificacion_Transaccion" />
+    <NavigationProperty Name="Plantilla_Transaccion" Relationship="BudgeeModel.FK_Plantilla_Transaccion_Expresion_Cabecera" FromRole="Expresion" ToRole="Plantilla_Transaccion" />
+    <NavigationProperty Name="Presupuesto" Relationship="BudgeeModel.FK_Presupuesto_Expresion_Cabecera" FromRole="Expresion" ToRole="Presupuesto" />
+  </EntityType>
+  <EntityType Name="Expresion_Variable">
+    <Key>
+      <PropertyRef Name="ID_Expresion" />
+      <PropertyRef Name="ID_Variable" />
+    </Key>
+    <Property Name="ID_Expresion" Type="Guid" Nullable="false" />
+    <Property Name="ID_Variable" Type="Guid" Nullable="false" />
+    <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Expresion" Relationship="BudgeeModel.FK_Expresion_Variable_Expresion" FromRole="Expresion_Variable" ToRole="Expresion" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Expresion_Variable_Variable" FromRole="Expresion_Variable" ToRole="Variable" />
+  </EntityType>
+  <EntityType Name="Notificacion">
+    <Key>
+      <PropertyRef Name="ID_Notificacion" />
+    </Key>
+    <Property Name="ID_Notificacion" Type="Guid" Nullable="false" />
+    <Property Name="Informacion" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Procedencia" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Recordatorio" Type="Guid" />
+    <Property Name="ID_Presupuesto" Type="Guid" />
+    <Property Name="Tipo_Estadistica" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Emision" Type="DateTime" Precision="3" />
+    <Property Name="Visto" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Recordatorio" Relationship="BudgeeModel.FK_Notificacion_Recordatorio" FromRole="Notificacion" ToRole="Recordatorio" />
+    <NavigationProperty Name="Presupuesto" Relationship="BudgeeModel.FK_Notificacion_Presupuesto" FromRole="Notificacion" ToRole="Presupuesto" />
+  </EntityType>
+  <EntityType Name="PlanificacionTransaccion_Etiqueta">
+    <Key>
+      <PropertyRef Name="ID_Planificacion_Transaccion" />
+      <PropertyRef Name="ID_Etiqueta" />
+    </Key>
+    <Property Name="ID_Planificacion_Transaccion" Type="Guid" Nullable="false" />
+    <Property Name="ID_Etiqueta" Type="Guid" Nullable="false" />
+    <Property Name="Orden" Type="Int32" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_PlanificacionTransaccion_Etiqueta_Etiqueta" FromRole="PlanificacionTransaccion_Etiqueta" ToRole="Caracteristica" />
+    <NavigationProperty Name="Planificacion_Transaccion" Relationship="BudgeeModel.FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion" FromRole="PlanificacionTransaccion_Etiqueta" ToRole="Planificacion_Transaccion" />
+  </EntityType>
+  <EntityType Name="PlantillaTransaccion_Etiqueta">
+    <Key>
+      <PropertyRef Name="ID_Plantilla_Transaccion" />
+      <PropertyRef Name="ID_Etiqueta" />
+    </Key>
+    <Property Name="ID_Plantilla_Transaccion" Type="Guid" Nullable="false" />
+    <Property Name="ID_Etiqueta" Type="Guid" Nullable="false" />
+    <Property Name="Orden" Type="Int32" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_PlantillaTransaccion_Etiqueta_Etiqueta" FromRole="PlantillaTransaccion_Etiqueta" ToRole="Caracteristica" />
+    <NavigationProperty Name="Plantilla_Transaccion" Relationship="BudgeeModel.FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion" FromRole="PlantillaTransaccion_Etiqueta" ToRole="Plantilla_Transaccion" />
+  </EntityType>
+  <EntityType Name="Transaccion">
+    <Key>
+      <PropertyRef Name="ID_Transaccion" />
+    </Key>
+    <Property Name="ID_Transaccion" Type="Guid" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Categoria" Type="Guid" />
+    <Property Name="Tipo_Operacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Monto_Expresion" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Concretada" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Cuenta" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Cuenta" Relationship="BudgeeModel.FK_Transaccion_Cuenta" FromRole="Transaccion" ToRole="Cuenta" />
+    <NavigationProperty Name="Expresion" Relationship="BudgeeModel.FK_Transaccion_Expresion_Cabecera" FromRole="Transaccion" ToRole="Expresion" />
+    <NavigationProperty Name="Transaccion_Etiqueta" Relationship="BudgeeModel.FK_Transaccion_Etiqueta_Transaccion" FromRole="Transaccion" ToRole="Transaccion_Etiqueta" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_Transaccion_Caracteristica" FromRole="Transaccion" ToRole="Caracteristica" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Variable_Transaccion" FromRole="Transaccion" ToRole="Variable" />
+  </EntityType>
+  <EntityType Name="Transaccion_Etiqueta">
+    <Key>
+      <PropertyRef Name="ID_Transaccion" />
+      <PropertyRef Name="ID_Etiqueta" />
+    </Key>
+    <Property Name="ID_Transaccion" Type="Guid" Nullable="false" />
+    <Property Name="ID_Etiqueta" Type="Guid" Nullable="false" />
+    <Property Name="Orden" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Transaccion" Relationship="BudgeeModel.FK_Transaccion_Etiqueta_Transaccion" FromRole="Transaccion_Etiqueta" ToRole="Transaccion" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_Transaccion_Etiqueta_Etiqueta" FromRole="Transaccion_Etiqueta" ToRole="Caracteristica" />
+  </EntityType>
+  <Association Name="FK_Transaccion_Cuenta">
+    <End Type="BudgeeModel.Cuenta" Role="Cuenta" Multiplicity="1" />
+    <End Type="BudgeeModel.Transaccion" Role="Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="ID_Cuenta" />
+      </Principal>
+      <Dependent Role="Transaccion">
+        <PropertyRef Name="ID_Cuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Expresion_Variable_Expresion">
+    <End Type="BudgeeModel.Expresion" Role="Expresion" Multiplicity="1" />
+    <End Type="BudgeeModel.Expresion_Variable" Role="Expresion_Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expresion">
+        <PropertyRef Name="ID_Expresion" />
+      </Principal>
+      <Dependent Role="Expresion_Variable">
+        <PropertyRef Name="ID_Expresion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaccion_Expresion_Cabecera">
+    <End Type="BudgeeModel.Expresion" Role="Expresion" Multiplicity="1" />
+    <End Type="BudgeeModel.Transaccion" Role="Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expresion">
+        <PropertyRef Name="ID_Expresion" />
+      </Principal>
+      <Dependent Role="Transaccion">
+        <PropertyRef Name="ID_Monto_Expresion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaccion_Etiqueta_Transaccion">
+    <End Type="BudgeeModel.Transaccion" Role="Transaccion" Multiplicity="1" />
+    <End Type="BudgeeModel.Transaccion_Etiqueta" Role="Transaccion_Etiqueta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaccion">
+        <PropertyRef Name="ID_Transaccion" />
+      </Principal>
+      <Dependent Role="Transaccion_Etiqueta">
+        <PropertyRef Name="ID_Transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Caracteristica">
+    <Key>
+      <PropertyRef Name="ID_Caracteristica" />
+    </Key>
+    <Property Name="ID_Caracteristica" Type="Guid" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <Property Name="Tipo_Caracteristica" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PlanificacionTransaccion_Etiqueta" Relationship="BudgeeModel.FK_PlanificacionTransaccion_Etiqueta_Etiqueta" FromRole="Caracteristica" ToRole="PlanificacionTransaccion_Etiqueta" />
+    <NavigationProperty Name="PlantillaTransaccion_Etiqueta" Relationship="BudgeeModel.FK_PlantillaTransaccion_Etiqueta_Etiqueta" FromRole="Caracteristica" ToRole="PlantillaTransaccion_Etiqueta" />
+    <NavigationProperty Name="Transaccion" Relationship="BudgeeModel.FK_Transaccion_Caracteristica" FromRole="Caracteristica" ToRole="Transaccion" />
+    <NavigationProperty Name="Transaccion_Etiqueta" Relationship="BudgeeModel.FK_Transaccion_Etiqueta_Etiqueta" FromRole="Caracteristica" ToRole="Transaccion_Etiqueta" />
+    <NavigationProperty Name="Planificacion_Transaccion" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Caracteristica" FromRole="Caracteristica" ToRole="Planificacion_Transaccion" />
+    <NavigationProperty Name="Plantilla_Transaccion" Relationship="BudgeeModel.FK_Plantilla_Transaccion_Caracteristica" FromRole="Caracteristica" ToRole="Plantilla_Transaccion" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Variable_Caracteristica" FromRole="Caracteristica" ToRole="Variable" />
+    <NavigationProperty Name="Variable1" Relationship="BudgeeModel.FK_Variable_Caracteristica1" FromRole="Caracteristica" ToRole="Variable" />
+  </EntityType>
+  <Association Name="FK_PlanificacionTransaccion_Etiqueta_Etiqueta">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="1" />
+    <End Type="BudgeeModel.PlanificacionTransaccion_Etiqueta" Role="PlanificacionTransaccion_Etiqueta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="PlanificacionTransaccion_Etiqueta">
+        <PropertyRef Name="ID_Etiqueta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlantillaTransaccion_Etiqueta_Etiqueta">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="1" />
+    <End Type="BudgeeModel.PlantillaTransaccion_Etiqueta" Role="PlantillaTransaccion_Etiqueta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="PlantillaTransaccion_Etiqueta">
+        <PropertyRef Name="ID_Etiqueta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaccion_Caracteristica">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Transaccion" Role="Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="Transaccion">
+        <PropertyRef Name="ID_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaccion_Etiqueta_Etiqueta">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="1" />
+    <End Type="BudgeeModel.Transaccion_Etiqueta" Role="Transaccion_Etiqueta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="Transaccion_Etiqueta">
+        <PropertyRef Name="ID_Etiqueta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Planificacion_Transaccion">
+    <Key>
+      <PropertyRef Name="ID_Planificacion_Transaccion" />
+    </Key>
+    <Property Name="ID_Planificacion_Transaccion" Type="Guid" Nullable="false" />
+    <Property Name="Descripcion_Planificacion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion_Transaccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Categoria" Type="Guid" />
+    <Property Name="Tipo_Operacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Monto_Expresion" Type="Guid" Nullable="false" />
+    <Property Name="ID_FrecuenciaInicio" Type="Guid" Nullable="false" />
+    <Property Name="ID_RecordatorioLigado" Type="Guid" />
+    <Property Name="Quitar_Al_Concluir" Type="Boolean" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Cuenta" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Caracteristica" FromRole="Planificacion_Transaccion" ToRole="Caracteristica" />
+    <NavigationProperty Name="Cuenta" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Cuenta" FromRole="Planificacion_Transaccion" ToRole="Cuenta" />
+    <NavigationProperty Name="Expresion" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Expresion_Cabecera" FromRole="Planificacion_Transaccion" ToRole="Expresion" />
+    <NavigationProperty Name="Recordatorio" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Recordatorio" FromRole="Planificacion_Transaccion" ToRole="Recordatorio" />
+    <NavigationProperty Name="PlanificacionTransaccion_Etiqueta" Relationship="BudgeeModel.FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion" FromRole="Planificacion_Transaccion" ToRole="PlanificacionTransaccion_Etiqueta" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Variable_Planificacion_Transaccion" FromRole="Planificacion_Transaccion" ToRole="Variable" />
+  </EntityType>
+  <EntityType Name="Recordatorio">
+    <Key>
+      <PropertyRef Name="ID_Recordatorio" />
+    </Key>
+    <Property Name="ID_Recordatorio" Type="Guid" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ID_FrecuenciaInicio" Type="Guid" Nullable="false" />
+    <Property Name="Establecer_Notif_Windows" Type="Boolean" Nullable="false" />
+    <Property Name="Establecer_Alarma_Windows" Type="Boolean" Nullable="false" />
+    <Property Name="Quitar_Al_Concluir" Type="Boolean" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Notificacion" Relationship="BudgeeModel.FK_Notificacion_Recordatorio" FromRole="Recordatorio" ToRole="Notificacion" />
+    <NavigationProperty Name="Planificacion_Transaccion" Relationship="BudgeeModel.FK_Planificacion_Transaccion_Recordatorio" FromRole="Recordatorio" ToRole="Planificacion_Transaccion" />
+  </EntityType>
+  <Association Name="FK_Planificacion_Transaccion_Caracteristica">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Planificacion_Transaccion" Role="Planificacion_Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="Planificacion_Transaccion">
+        <PropertyRef Name="ID_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Planificacion_Transaccion_Cuenta">
+    <End Type="BudgeeModel.Cuenta" Role="Cuenta" Multiplicity="1" />
+    <End Type="BudgeeModel.Planificacion_Transaccion" Role="Planificacion_Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="ID_Cuenta" />
+      </Principal>
+      <Dependent Role="Planificacion_Transaccion">
+        <PropertyRef Name="ID_Cuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Planificacion_Transaccion_Expresion_Cabecera">
+    <End Type="BudgeeModel.Expresion" Role="Expresion" Multiplicity="1" />
+    <End Type="BudgeeModel.Planificacion_Transaccion" Role="Planificacion_Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expresion">
+        <PropertyRef Name="ID_Expresion" />
+      </Principal>
+      <Dependent Role="Planificacion_Transaccion">
+        <PropertyRef Name="ID_Monto_Expresion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notificacion_Recordatorio">
+    <End Type="BudgeeModel.Recordatorio" Role="Recordatorio" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Notificacion" Role="Notificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recordatorio">
+        <PropertyRef Name="ID_Recordatorio" />
+      </Principal>
+      <Dependent Role="Notificacion">
+        <PropertyRef Name="ID_Recordatorio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Planificacion_Transaccion_Recordatorio">
+    <End Type="BudgeeModel.Recordatorio" Role="Recordatorio" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Planificacion_Transaccion" Role="Planificacion_Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recordatorio">
+        <PropertyRef Name="ID_Recordatorio" />
+      </Principal>
+      <Dependent Role="Planificacion_Transaccion">
+        <PropertyRef Name="ID_RecordatorioLigado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanificacionTransaccion_Etiqueta_Planificacion_Transaccion">
+    <End Type="BudgeeModel.Planificacion_Transaccion" Role="Planificacion_Transaccion" Multiplicity="1" />
+    <End Type="BudgeeModel.PlanificacionTransaccion_Etiqueta" Role="PlanificacionTransaccion_Etiqueta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planificacion_Transaccion">
+        <PropertyRef Name="ID_Planificacion_Transaccion" />
+      </Principal>
+      <Dependent Role="PlanificacionTransaccion_Etiqueta">
+        <PropertyRef Name="ID_Planificacion_Transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Plantilla_Transaccion">
+    <Key>
+      <PropertyRef Name="ID_Plantilla_Transaccion" />
+    </Key>
+    <Property Name="ID_Plantilla_Transaccion" Type="Guid" Nullable="false" />
+    <Property Name="Descripcion_Plantilla" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion_Transaccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Categoria" Type="Guid" />
+    <Property Name="Tipo_Operacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Monto_Expresion" Type="Guid" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_Plantilla_Transaccion_Caracteristica" FromRole="Plantilla_Transaccion" ToRole="Caracteristica" />
+    <NavigationProperty Name="Expresion" Relationship="BudgeeModel.FK_Plantilla_Transaccion_Expresion_Cabecera" FromRole="Plantilla_Transaccion" ToRole="Expresion" />
+    <NavigationProperty Name="PlantillaTransaccion_Etiqueta" Relationship="BudgeeModel.FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion" FromRole="Plantilla_Transaccion" ToRole="PlantillaTransaccion_Etiqueta" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Variable_Plantilla_Transaccion" FromRole="Plantilla_Transaccion" ToRole="Variable" />
+  </EntityType>
+  <Association Name="FK_Plantilla_Transaccion_Caracteristica">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Plantilla_Transaccion" Role="Plantilla_Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="Plantilla_Transaccion">
+        <PropertyRef Name="ID_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Plantilla_Transaccion_Expresion_Cabecera">
+    <End Type="BudgeeModel.Expresion" Role="Expresion" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Plantilla_Transaccion" Role="Plantilla_Transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expresion">
+        <PropertyRef Name="ID_Expresion" />
+      </Principal>
+      <Dependent Role="Plantilla_Transaccion">
+        <PropertyRef Name="ID_Monto_Expresion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlantillaTransaccion_Etiqueta_Plantilla_Transaccion">
+    <End Type="BudgeeModel.Plantilla_Transaccion" Role="Plantilla_Transaccion" Multiplicity="1" />
+    <End Type="BudgeeModel.PlantillaTransaccion_Etiqueta" Role="PlantillaTransaccion_Etiqueta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plantilla_Transaccion">
+        <PropertyRef Name="ID_Plantilla_Transaccion" />
+      </Principal>
+      <Dependent Role="PlantillaTransaccion_Etiqueta">
+        <PropertyRef Name="ID_Plantilla_Transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Presupuesto">
+    <Key>
+      <PropertyRef Name="ID_Presupuesto" />
+    </Key>
+    <Property Name="ID_Presupuesto" Type="Guid" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Cuando_Chequear" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Variable_Supervisada" Type="Guid" Nullable="false" />
+    <Property Name="Operador_Relacional" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Condicion_Expresion" Type="Guid" Nullable="false" />
+    <Property Name="ID_Lapso_Frecuencia" Type="Guid" />
+    <Property Name="Establecer_Notif_Windows" Type="Boolean" Nullable="false" />
+    <Property Name="Establecer_Alarma_Windows" Type="Boolean" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Expresion" Relationship="BudgeeModel.FK_Presupuesto_Expresion_Cabecera" FromRole="Presupuesto" ToRole="Expresion" />
+    <NavigationProperty Name="Notificacion" Relationship="BudgeeModel.FK_Notificacion_Presupuesto" FromRole="Presupuesto" ToRole="Notificacion" />
+    <NavigationProperty Name="Variable" Relationship="BudgeeModel.FK_Presupuesto_Variable" FromRole="Presupuesto" ToRole="Variable" />
+  </EntityType>
+  <Association Name="FK_Presupuesto_Expresion_Cabecera">
+    <End Type="BudgeeModel.Expresion" Role="Expresion" Multiplicity="1" />
+    <End Type="BudgeeModel.Presupuesto" Role="Presupuesto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expresion">
+        <PropertyRef Name="ID_Expresion" />
+      </Principal>
+      <Dependent Role="Presupuesto">
+        <PropertyRef Name="ID_Condicion_Expresion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notificacion_Presupuesto">
+    <End Type="BudgeeModel.Presupuesto" Role="Presupuesto" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Notificacion" Role="Notificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Presupuesto">
+        <PropertyRef Name="ID_Presupuesto" />
+      </Principal>
+      <Dependent Role="Notificacion">
+        <PropertyRef Name="ID_Presupuesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Variable">
+    <Key>
+      <PropertyRef Name="ID_Variable" />
+    </Key>
+    <Property Name="ID_Variable" Type="Guid" Nullable="false" />
+    <Property Name="Nombre_Variable" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Variable" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Categoria" Type="Guid" />
+    <Property Name="ID_Etiqueta" Type="Guid" />
+    <Property Name="ID_Cuenta" Type="Guid" />
+    <Property Name="ID_Transaccion" Type="Guid" />
+    <Property Name="ID_Planificacion_Transaccion" Type="Guid" />
+    <Property Name="ID_Plantilla_Transaccion" Type="Guid" />
+    <Property Name="ID_Lapso" Type="Guid" />
+    <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Caracteristica" Relationship="BudgeeModel.FK_Variable_Caracteristica" FromRole="Variable" ToRole="Caracteristica" />
+    <NavigationProperty Name="Caracteristica1" Relationship="BudgeeModel.FK_Variable_Caracteristica1" FromRole="Variable" ToRole="Caracteristica" />
+    <NavigationProperty Name="Cuenta" Relationship="BudgeeModel.FK_Variable_Cuenta" FromRole="Variable" ToRole="Cuenta" />
+    <NavigationProperty Name="Expresion_Variable" Relationship="BudgeeModel.FK_Expresion_Variable_Variable" FromRole="Variable" ToRole="Expresion_Variable" />
+    <NavigationProperty Name="Planificacion_Transaccion" Relationship="BudgeeModel.FK_Variable_Planificacion_Transaccion" FromRole="Variable" ToRole="Planificacion_Transaccion" />
+    <NavigationProperty Name="Plantilla_Transaccion" Relationship="BudgeeModel.FK_Variable_Plantilla_Transaccion" FromRole="Variable" ToRole="Plantilla_Transaccion" />
+    <NavigationProperty Name="Presupuesto" Relationship="BudgeeModel.FK_Presupuesto_Variable" FromRole="Variable" ToRole="Presupuesto" />
+    <NavigationProperty Name="Transaccion" Relationship="BudgeeModel.FK_Variable_Transaccion" FromRole="Variable" ToRole="Transaccion" />
+  </EntityType>
+  <Association Name="FK_Variable_Caracteristica">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="Variable">
+        <PropertyRef Name="ID_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Variable_Caracteristica1">
+    <End Type="BudgeeModel.Caracteristica" Role="Caracteristica" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caracteristica">
+        <PropertyRef Name="ID_Caracteristica" />
+      </Principal>
+      <Dependent Role="Variable">
+        <PropertyRef Name="ID_Etiqueta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Variable_Cuenta">
+    <End Type="BudgeeModel.Cuenta" Role="Cuenta" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="ID_Cuenta" />
+      </Principal>
+      <Dependent Role="Variable">
+        <PropertyRef Name="ID_Cuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Expresion_Variable_Variable">
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="1" />
+    <End Type="BudgeeModel.Expresion_Variable" Role="Expresion_Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Variable">
+        <PropertyRef Name="ID_Variable" />
+      </Principal>
+      <Dependent Role="Expresion_Variable">
+        <PropertyRef Name="ID_Variable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Variable_Planificacion_Transaccion">
+    <End Type="BudgeeModel.Planificacion_Transaccion" Role="Planificacion_Transaccion" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Planificacion_Transaccion">
+        <PropertyRef Name="ID_Planificacion_Transaccion" />
+      </Principal>
+      <Dependent Role="Variable">
+        <PropertyRef Name="ID_Planificacion_Transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Variable_Plantilla_Transaccion">
+    <End Type="BudgeeModel.Plantilla_Transaccion" Role="Plantilla_Transaccion" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plantilla_Transaccion">
+        <PropertyRef Name="ID_Plantilla_Transaccion" />
+      </Principal>
+      <Dependent Role="Variable">
+        <PropertyRef Name="ID_Plantilla_Transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presupuesto_Variable">
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="1" />
+    <End Type="BudgeeModel.Presupuesto" Role="Presupuesto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Variable">
+        <PropertyRef Name="ID_Variable" />
+      </Principal>
+      <Dependent Role="Presupuesto">
+        <PropertyRef Name="ID_Variable_Supervisada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Variable_Transaccion">
+    <End Type="BudgeeModel.Transaccion" Role="Transaccion" Multiplicity="0..1" />
+    <End Type="BudgeeModel.Variable" Role="Variable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaccion">
+        <PropertyRef Name="ID_Transaccion" />
+      </Principal>
+      <Dependent Role="Variable">
+        <PropertyRef Name="ID_Transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

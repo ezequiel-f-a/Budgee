@@ -1,0 +1,49 @@
+﻿2023-09-20 19:52:28,151 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 80f0b743-a8d1-4b15-ab46-8fff7d655541
+2023-09-20 19:52:28,220 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicio de sesión
+2023-09-20 19:52:28,333 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2023-09-20 19:52:28,350 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (comienzo de proceso)
+2023-09-20 19:52:28,872 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (fin de proceso)
+2023-09-20 19:52:28,875 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (inicio de proceso)
+2023-09-20 19:52:28,935 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (fin de proceso)
+2023-09-20 19:52:28,936 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (fin de proceso)
+2023-09-20 19:52:30,875 > (INFO) [BLL.Services.PlanificacionService]{GenerateTransaccionPendiente}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Creación de transacción: cb741d68-14cb-4a39-81d1-310d66a43734
+2023-09-20 19:52:31,251 > (INFO) [BLL.Services.PlanificacionService]{GenerateTransaccionPendiente}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Creación de transacción: 01c9407f-ba38-487e-b822-d0cdc69d1dd5
+2023-09-20 19:52:34,670 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Cierre de sesión
+2023-09-20 19:56:30,063 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 80f0b743-a8d1-4b15-ab46-8fff7d655541
+2023-09-20 19:56:30,097 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicio de sesión
+2023-09-20 19:56:30,214 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2023-09-20 19:56:30,225 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (comienzo de proceso)
+2023-09-20 19:56:30,708 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Obtención de tareas programadas (fin de proceso)
+2023-09-20 19:56:30,710 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (inicio de proceso)
+2023-09-20 19:56:30,766 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Static to Dynamic Batch (fin de proceso)
+2023-09-20 19:56:30,767 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicialización de servicio de tareas programadas (fin de proceso)
+2023-09-20 19:57:51,926 > (INFO) [UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1[T]]{but_Modificar_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Modificación de presupuesto: b3a015fb-0324-4b26-99f5-c5c5c9c63acf
+2023-09-20 19:57:59,969 > (INFO) [UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1[T]]{but_Modificar_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Modificación de presupuesto: 04f699a4-5d18-4eee-9bd4-12143ad95ae0
+2023-09-20 19:58:13,982 > (INFO) [UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1[T]]{but_Modificar_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Modificación de presupuesto: 8126fbe2-7caa-4bac-a1ed-cb9fb5200dd6
+2023-09-20 19:59:12,053 > (INFO) [UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1[T]]{but_Eliminar_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Modificación de transacción: 6fe7874b-e6d0-4ba7-bac1-79f48a7a7b05
+2023-09-20 20:13:31,989 > (INFO) [UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1[T]]{but_Agregar_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Creación de transacción: 8c7696e0-96f7-4069-a3a3-77519bcc7ec4
+2023-09-20 20:17:37,421 > (INFO) [UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1[T]]{but_Modificar_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Modificación de recordatorio: 0bc0452f-4ea0-4d4f-b021-d923ea33cac5
+2023-09-20 20:25:36,468 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Cierre de sesión
+2023-09-20 20:30:13,554 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 40c2462b-be8b-429a-8b0e-a5a2381e6cc8
+2023-09-20 20:30:13,587 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicio de sesión
+2023-09-20 20:30:13,694 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2023-09-20 20:30:13,732 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (comienzo de proceso)
+2023-09-20 20:30:14,501 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (fin de proceso)
+2023-09-20 20:30:14,503 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (inicio de proceso)
+2023-09-20 20:30:14,571 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (fin de proceso)
+2023-09-20 20:30:14,571 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (fin de proceso)
+2023-09-20 20:30:17,702 > (INFO) [BLL.Services.PlanificacionService]{GenerateTransaccionPendiente}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Creación de transacción: c3687d7b-175e-452e-9ec6-45f1f57e7232
+2023-09-20 20:30:18,237 > (INFO) [BLL.Services.PlanificacionService]{GenerateTransaccionPendiente}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Creación de transacción: 0ef66162-7a8a-468d-9745-d9a8cdced737
+2023-09-20 20:31:04,360 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Cierre de sesión
+2023-09-20 22:59:51,544 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 40c2462b-be8b-429a-8b0e-a5a2381e6cc8
+2023-09-20 22:59:51,575 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicio de sesión
+2023-09-20 22:59:51,696 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (comienzo de proceso)
+2023-09-20 22:59:51,749 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (comienzo de proceso)
+2023-09-20 22:59:52,313 > (INFO) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Obtención de tareas programadas (fin de proceso)
+2023-09-20 22:59:52,315 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (inicio de proceso)
+2023-09-20 22:59:52,389 > (DEBUG) [BLL.Services.SchedulerService]{Startup}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Static to Dynamic Batch (fin de proceso)
+2023-09-20 22:59:52,390 > (INFO) [BLL.Services.StartupService+<>c]{<Startup>b__0_1}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Inicialización de servicio de tareas programadas (fin de proceso)
+2023-09-20 23:00:02,477 > (INFO) [UI.Forms.f_Main]{CerrarSesion}(User:40c2462b-be8b-429a-8b0e-a5a2381e6cc8):: Cierre de sesión
+2023-09-20 23:00:12,004 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:N/A):: Modificación de usuario: 80f0b743-a8d1-4b15-ab46-8fff7d655541
+2023-09-20 23:00:12,034 > (INFO) [UI.Forms.f_Login]{but_IniciarSesion_Click}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Inicio de sesión
+2023-09-20 23:00:57,124 > (INFO) [UI.Forms.f_Main]{f_Main_FormClosed}(User:80f0b743-a8d1-4b15-ab46-8fff7d655541):: Cierre de sesión

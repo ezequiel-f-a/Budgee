@@ -1,0 +1,17 @@
+3. Casos de uso =======================================
+
+- Panel de admin:
+  > Bitacoras
+  > Salud Servicios
+
+4. Diagrama de Clases ================================
+
+- Relacionados a IA Consejos
+- Salud Servicios
+- Bitacoras distintas
+- Historico de modelo de datos
+- Esquema de autenticacion Auth0/etc
+
+7. DER ===============================================
+
+???

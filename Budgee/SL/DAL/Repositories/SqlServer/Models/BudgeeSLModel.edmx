@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BudgeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Configuracion_Usuario">
+          <Key>
+            <PropertyRef Name="ID_Configuracion_Usuario" />
+          </Key>
+          <Property Name="ID_Configuracion_Usuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Divisa_Default" Type="varchar" MaxLength="50" />
+          <Property Name="Idioma" Type="varchar" MaxLength="50" />
+          <Property Name="Mantener_Sesion_Iniciada" Type="bit" Nullable="false" />
+          <Property Name="Alarmas_Windows" Type="bit" Nullable="false" />
+          <Property Name="Notificaciones_Windows" Type="bit" Nullable="false" />
+          <Property Name="Notificaciones_Presupuestos" Type="bit" Nullable="false" />
+          <Property Name="Notificaciones_Recordatorios" Type="bit" Nullable="false" />
+          <Property Name="Notificaciones_Estadisticas" Type="bit" Nullable="false" />
+          <Property Name="Notificaciones_Expiran" Type="bit" Nullable="false" />
+          <Property Name="Notificaciones_Expiran_Frecuencia" Type="varchar" MaxLength="50" />
+          <Property Name="Notificaciones_Expiran_Valor" Type="int" />
+          <Property Name="Respaldar" Type="bit" Nullable="false" />
+          <Property Name="Limite_Respaldos" Type="bit" Nullable="false" />
+          <Property Name="Respaldos_Cantidad_Maxima" Type="int" />
+          <Property Name="ID_FrecuenciaInicio_Respaldos" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Familia">
+          <Key>
+            <PropertyRef Name="ID_Familia" />
+          </Key>
+          <Property Name="ID_Familia" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Familia_Familia">
+          <Key>
+            <PropertyRef Name="ID_Familia_Padre" />
+            <PropertyRef Name="ID_Familia_Hija" />
+          </Key>
+          <Property Name="ID_Familia_Padre" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ID_Familia_Hija" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Familia_Patente">
+          <Key>
+            <PropertyRef Name="ID_Familia" />
+            <PropertyRef Name="ID_Patente" />
+          </Key>
+          <Property Name="ID_Familia" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ID_Patente" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="FrecuenciaInicio">
+          <Key>
+            <PropertyRef Name="ID_FrecuenciaInicio" />
+          </Key>
+          <Property Name="ID_FrecuenciaInicio" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FrecuenciaMagnitud" Type="varchar" MaxLength="50" />
+          <Property Name="FrecuenciaValor" Type="int" />
+          <Property Name="Año" Type="int" />
+          <Property Name="Mes" Type="int" />
+          <Property Name="Dia_del_Mes" Type="varchar" MaxLength="50" />
+          <Property Name="Dia_de_la_Semana" Type="varchar" MaxLength="50" />
+          <Property Name="Horario" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Fecha_Ultimo_Proceso" Type="datetime" />
+          <Property Name="ID_Usuario" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Lapso">
+          <Key>
+            <PropertyRef Name="ID_Lapso" />
+          </Key>
+          <Property Name="ID_Lapso" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Tipo_Lapso" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Fecha_Desde" Type="datetime" />
+          <Property Name="Fecha_Hasta" Type="datetime" />
+          <Property Name="ID_Usuario" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Patente">
+          <Key>
+            <PropertyRef Name="ID_Patente" />
+          </Key>
+          <Property Name="ID_Patente" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="150" />
+          <Property Name="Definicion" Type="varchar" MaxLength="500" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="SesionTrack">
+          <Key>
+            <PropertyRef Name="ID_SesionTrack" />
+          </Key>
+          <Property Name="ID_SesionTrack" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ID_Usuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Fecha_Proceso" Type="datetime" Nullable="false" />
+          <Property Name="TipoTrack" Type="varchar" MaxLength="100" />
+          <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Nombre_Usuario" Type="varchar" MaxLength="50" />
+          <Property Name="Password_Usuario" Type="varchar" MaxLength="128" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ID_Configuracion_Usuario" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario_Familia">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+            <PropertyRef Name="ID_Familia" />
+          </Key>
+          <Property Name="ID_Usuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ID_Familia" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario_Patente">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+            <PropertyRef Name="ID_Patente" />
+          </Key>
+          <Property Name="ID_Usuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ID_Patente" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="FK_Configuracion_Usuario_FrecuenciaInicio">
+          <End Role="FrecuenciaInicio" Type="Self.FrecuenciaInicio" Multiplicity="0..1" />
+          <End Role="Configuracion_Usuario" Type="Self.Configuracion_Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FrecuenciaInicio">
+              <PropertyRef Name="ID_FrecuenciaInicio" />
+            </Principal>
+            <Dependent Role="Configuracion_Usuario">
+              <PropertyRef Name="ID_FrecuenciaInicio_Respaldos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Familia_Familia">
+          <End Role="Familia" Type="Self.Familia" Multiplicity="1" />
+          <End Role="Familia_Familia" Type="Self.Familia_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Familia_Familia">
+              <PropertyRef Name="ID_Familia_Padre" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Familia_Familia1">
+          <End Role="Familia" Type="Self.Familia" Multiplicity="1" />
+          <End Role="Familia_Familia" Type="Self.Familia_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Familia_Familia">
+              <PropertyRef Name="ID_Familia_Hija" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Patente_Familia">
+          <End Role="Familia" Type="Self.Familia" Multiplicity="1" />
+          <End Role="Familia_Patente" Type="Self.Familia_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Familia_Patente">
+              <PropertyRef Name="ID_Familia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Patente_Patente">
+          <End Role="Patente" Type="Self.Patente" Multiplicity="1" />
+          <End Role="Familia_Patente" Type="Self.Familia_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Principal>
+            <Dependent Role="Familia_Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SesionTrack_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="SesionTrack" Type="Self.SesionTrack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="SesionTrack">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Configuracion_Usuario">
+          <End Role="Configuracion_Usuario" Type="Self.Configuracion_Usuario" Multiplicity="1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Configuracion_Usuario">
+              <PropertyRef Name="ID_Configuracion_Usuario" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="ID_Configuracion_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Familia_Familia">
+          <End Role="Familia" Type="Self.Familia" Multiplicity="1" />
+          <End Role="Usuario_Familia" Type="Self.Usuario_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Usuario_Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Familia_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Usuario_Familia" Type="Self.Usuario_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Usuario_Familia">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Patente_Patente">
+          <End Role="Patente" Type="Self.Patente" Multiplicity="1" />
+          <End Role="Usuario_Patente" Type="Self.Usuario_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Principal>
+            <Dependent Role="Usuario_Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Patente_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Usuario_Patente" Type="Self.Usuario_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Usuario_Patente">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BudgeeModelStoreContainer">
+          <EntitySet Name="Configuracion_Usuario" EntityType="Self.Configuracion_Usuario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Familia" EntityType="Self.Familia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Familia_Familia" EntityType="Self.Familia_Familia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Familia_Patente" EntityType="Self.Familia_Patente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FrecuenciaInicio" EntityType="Self.FrecuenciaInicio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lapso" EntityType="Self.Lapso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Patente" EntityType="Self.Patente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SesionTrack" EntityType="Self.SesionTrack" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario_Familia" EntityType="Self.Usuario_Familia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario_Patente" EntityType="Self.Usuario_Patente" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Configuracion_Usuario_FrecuenciaInicio" Association="Self.FK_Configuracion_Usuario_FrecuenciaInicio">
+            <End Role="FrecuenciaInicio" EntitySet="FrecuenciaInicio" />
+            <End Role="Configuracion_Usuario" EntitySet="Configuracion_Usuario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Familia_Familia" Association="Self.FK_Familia_Familia_Familia">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Familia_Familia" EntitySet="Familia_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Familia_Familia1" Association="Self.FK_Familia_Familia_Familia1">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Familia_Familia" EntitySet="Familia_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Patente_Familia" Association="Self.FK_Familia_Patente_Familia">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Familia_Patente" EntitySet="Familia_Patente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Patente_Patente" Association="Self.FK_Familia_Patente_Patente">
+            <End Role="Patente" EntitySet="Patente" />
+            <End Role="Familia_Patente" EntitySet="Familia_Patente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SesionTrack_Usuario" Association="Self.FK_SesionTrack_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="SesionTrack" EntitySet="SesionTrack" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Configuracion_Usuario" Association="Self.FK_Usuario_Configuracion_Usuario">
+            <End Role="Configuracion_Usuario" EntitySet="Configuracion_Usuario" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Familia_Familia" Association="Self.FK_Usuario_Familia_Familia">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Usuario_Familia" EntitySet="Usuario_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Familia_Usuario" Association="Self.FK_Usuario_Familia_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Usuario_Familia" EntitySet="Usuario_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Patente_Patente" Association="Self.FK_Usuario_Patente_Patente">
+            <End Role="Patente" EntitySet="Patente" />
+            <End Role="Usuario_Patente" EntitySet="Usuario_Patente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Patente_Usuario" Association="Self.FK_Usuario_Patente_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Usuario_Patente" EntitySet="Usuario_Patente" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BudgeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Familia" EntityType="BudgeeModel.Familia" />
+          <EntitySet Name="Familia_Familia" EntityType="BudgeeModel.Familia_Familia" />
+          <EntitySet Name="Familia_Patente" EntityType="BudgeeModel.Familia_Patente" />
+          <EntitySet Name="Patente" EntityType="BudgeeModel.Patente" />
+          <EntitySet Name="Usuario_Familia" EntityType="BudgeeModel.Usuario_Familia" />
+          <EntitySet Name="Usuario_Patente" EntityType="BudgeeModel.Usuario_Patente" />
+          <AssociationSet Name="FK_Familia_Familia_Familia" Association="BudgeeModel.FK_Familia_Familia_Familia">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Familia_Familia" EntitySet="Familia_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Familia_Familia1" Association="BudgeeModel.FK_Familia_Familia_Familia1">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Familia_Familia" EntitySet="Familia_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Patente_Familia" Association="BudgeeModel.FK_Familia_Patente_Familia">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Familia_Patente" EntitySet="Familia_Patente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Familia_Familia" Association="BudgeeModel.FK_Usuario_Familia_Familia">
+            <End Role="Familia" EntitySet="Familia" />
+            <End Role="Usuario_Familia" EntitySet="Usuario_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Familia_Patente_Patente" Association="BudgeeModel.FK_Familia_Patente_Patente">
+            <End Role="Patente" EntitySet="Patente" />
+            <End Role="Familia_Patente" EntitySet="Familia_Patente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Patente_Patente" Association="BudgeeModel.FK_Usuario_Patente_Patente">
+            <End Role="Patente" EntitySet="Patente" />
+            <End Role="Usuario_Patente" EntitySet="Usuario_Patente" />
+          </AssociationSet>
+          <EntitySet Name="SesionTrack" EntityType="BudgeeModel.SesionTrack" />
+          <EntitySet Name="Usuario" EntityType="BudgeeModel.Usuario" />
+          <AssociationSet Name="FK_SesionTrack_Usuario" Association="BudgeeModel.FK_SesionTrack_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="SesionTrack" EntitySet="SesionTrack" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Familia_Usuario" Association="BudgeeModel.FK_Usuario_Familia_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Usuario_Familia" EntitySet="Usuario_Familia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Patente_Usuario" Association="BudgeeModel.FK_Usuario_Patente_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Usuario_Patente" EntitySet="Usuario_Patente" />
+          </AssociationSet>
+          <EntitySet Name="Configuracion_Usuario" EntityType="BudgeeModel.Configuracion_Usuario" />
+          <AssociationSet Name="FK_Usuario_Configuracion_Usuario" Association="BudgeeModel.FK_Usuario_Configuracion_Usuario">
+            <End Role="Configuracion_Usuario" EntitySet="Configuracion_Usuario" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+          <EntitySet Name="Lapso" EntityType="BudgeeModel.Lapso" />
+          <EntitySet Name="FrecuenciaInicio" EntityType="BudgeeModel.FrecuenciaInicio" />
+          <AssociationSet Name="FK_Configuracion_Usuario_FrecuenciaInicio" Association="BudgeeModel.FK_Configuracion_Usuario_FrecuenciaInicio">
+            <End Role="FrecuenciaInicio" EntitySet="FrecuenciaInicio" />
+            <End Role="Configuracion_Usuario" EntitySet="Configuracion_Usuario" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Familia">
+          <Key>
+            <PropertyRef Name="ID_Familia" />
+          </Key>
+          <Property Name="ID_Familia" Type="Guid" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Familia_Familia" Relationship="BudgeeModel.FK_Familia_Familia_Familia" FromRole="Familia" ToRole="Familia_Familia" />
+          <NavigationProperty Name="Familia_Familia1" Relationship="BudgeeModel.FK_Familia_Familia_Familia1" FromRole="Familia" ToRole="Familia_Familia" />
+          <NavigationProperty Name="Familia_Patente" Relationship="BudgeeModel.FK_Familia_Patente_Familia" FromRole="Familia" ToRole="Familia_Patente" />
+          <NavigationProperty Name="Usuario_Familia" Relationship="BudgeeModel.FK_Usuario_Familia_Familia" FromRole="Familia" ToRole="Usuario_Familia" />
+        </EntityType>
+        <EntityType Name="Familia_Familia">
+          <Key>
+            <PropertyRef Name="ID_Familia_Padre" />
+            <PropertyRef Name="ID_Familia_Hija" />
+          </Key>
+          <Property Name="ID_Familia_Padre" Type="Guid" Nullable="false" />
+          <Property Name="ID_Familia_Hija" Type="Guid" Nullable="false" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Familia" Relationship="BudgeeModel.FK_Familia_Familia_Familia" FromRole="Familia_Familia" ToRole="Familia" />
+          <NavigationProperty Name="Familia1" Relationship="BudgeeModel.FK_Familia_Familia_Familia1" FromRole="Familia_Familia" ToRole="Familia" />
+        </EntityType>
+        <EntityType Name="Familia_Patente">
+          <Key>
+            <PropertyRef Name="ID_Familia" />
+            <PropertyRef Name="ID_Patente" />
+          </Key>
+          <Property Name="ID_Familia" Type="Guid" Nullable="false" />
+          <Property Name="ID_Patente" Type="Guid" Nullable="false" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Familia" Relationship="BudgeeModel.FK_Familia_Patente_Familia" FromRole="Familia_Patente" ToRole="Familia" />
+          <NavigationProperty Name="Patente" Relationship="BudgeeModel.FK_Familia_Patente_Patente" FromRole="Familia_Patente" ToRole="Patente" />
+        </EntityType>
+        <EntityType Name="Patente">
+          <Key>
+            <PropertyRef Name="ID_Patente" />
+          </Key>
+          <Property Name="ID_Patente" Type="Guid" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Definicion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Familia_Patente" Relationship="BudgeeModel.FK_Familia_Patente_Patente" FromRole="Patente" ToRole="Familia_Patente" />
+          <NavigationProperty Name="Usuario_Patente" Relationship="BudgeeModel.FK_Usuario_Patente_Patente" FromRole="Patente" ToRole="Usuario_Patente" />
+        </EntityType>
+        <EntityType Name="Usuario_Familia">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+            <PropertyRef Name="ID_Familia" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+          <Property Name="ID_Familia" Type="Guid" Nullable="false" />
+          <Property Name="timestamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Familia" Relationship="BudgeeModel.FK_Usuario_Familia_Familia" FromRole="Usuario_Familia" ToRole="Familia" />
+          <NavigationProperty Name="Usuario" Relationship="BudgeeModel.FK_Usuario_Familia_Usuario" FromRole="Usuario_Familia" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Usuario_Patente">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+            <PropertyRef Name="ID_Patente" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+          <Property Name="ID_Patente" Type="Guid" Nullable="false" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Patente" Relationship="BudgeeModel.FK_Usuario_Patente_Patente" FromRole="Usuario_Patente" ToRole="Patente" />
+          <NavigationProperty Name="Usuario" Relationship="BudgeeModel.FK_Usuario_Patente_Usuario" FromRole="Usuario_Patente" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK_Familia_Familia_Familia">
+          <End Type="BudgeeModel.Familia" Role="Familia" Multiplicity="1" />
+          <End Type="BudgeeModel.Familia_Familia" Role="Familia_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Familia_Familia">
+              <PropertyRef Name="ID_Familia_Padre" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Familia_Familia1">
+          <End Type="BudgeeModel.Familia" Role="Familia" Multiplicity="1" />
+          <End Type="BudgeeModel.Familia_Familia" Role="Familia_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Familia_Familia">
+              <PropertyRef Name="ID_Familia_Hija" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Patente_Familia">
+          <End Type="BudgeeModel.Familia" Role="Familia" Multiplicity="1" />
+          <End Type="BudgeeModel.Familia_Patente" Role="Familia_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Familia_Patente">
+              <PropertyRef Name="ID_Familia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Familia_Familia">
+          <End Type="BudgeeModel.Familia" Role="Familia" Multiplicity="1" />
+          <End Type="BudgeeModel.Usuario_Familia" Role="Usuario_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Principal>
+            <Dependent Role="Usuario_Familia">
+              <PropertyRef Name="ID_Familia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Familia_Patente_Patente">
+          <End Type="BudgeeModel.Patente" Role="Patente" Multiplicity="1" />
+          <End Type="BudgeeModel.Familia_Patente" Role="Familia_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Principal>
+            <Dependent Role="Familia_Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Patente_Patente">
+          <End Type="BudgeeModel.Patente" Role="Patente" Multiplicity="1" />
+          <End Type="BudgeeModel.Usuario_Patente" Role="Usuario_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Principal>
+            <Dependent Role="Usuario_Patente">
+              <PropertyRef Name="ID_Patente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SesionTrack">
+          <Key>
+            <PropertyRef Name="ID_SesionTrack" />
+          </Key>
+          <Property Name="ID_SesionTrack" Type="Guid" Nullable="false" />
+          <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+          <Property Name="Fecha_Proceso" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="TipoTrack" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Usuario" Relationship="BudgeeModel.FK_SesionTrack_Usuario" FromRole="SesionTrack" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+          <Property Name="Nombre_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password_Usuario" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="Boolean" Nullable="false" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ID_Configuracion_Usuario" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="SesionTrack" Relationship="BudgeeModel.FK_SesionTrack_Usuario" FromRole="Usuario" ToRole="SesionTrack" />
+          <NavigationProperty Name="Usuario_Familia" Relationship="BudgeeModel.FK_Usuario_Familia_Usuario" FromRole="Usuario" ToRole="Usuario_Familia" />
+          <NavigationProperty Name="Usuario_Patente" Relationship="BudgeeModel.FK_Usuario_Patente_Usuario" FromRole="Usuario" ToRole="Usuario_Patente" />
+          <NavigationProperty Name="Configuracion_Usuario" Relationship="BudgeeModel.FK_Usuario_Configuracion_Usuario" FromRole="Usuario" ToRole="Configuracion_Usuario" />
+        </EntityType>
+        <Association Name="FK_SesionTrack_Usuario">
+          <End Type="BudgeeModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="BudgeeModel.SesionTrack" Role="SesionTrack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="SesionTrack">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Familia_Usuario">
+          <End Type="BudgeeModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="BudgeeModel.Usuario_Familia" Role="Usuario_Familia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Usuario_Familia">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Patente_Usuario">
+          <End Type="BudgeeModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="BudgeeModel.Usuario_Patente" Role="Usuario_Patente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="ID_Usuario" />
+            </Principal>
+            <Dependent Role="Usuario_Patente">
+              <PropertyRef Name="ID_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Configuracion_Usuario">
+          <Key>
+            <PropertyRef Name="ID_Configuracion_Usuario" />
+          </Key>
+          <Property Name="ID_Configuracion_Usuario" Type="Guid" Nullable="false" />
+          <Property Name="Divisa_Default" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Idioma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mantener_Sesion_Iniciada" Type="Boolean" Nullable="false" />
+          <Property Name="Alarmas_Windows" Type="Boolean" Nullable="false" />
+          <Property Name="Notificaciones_Windows" Type="Boolean" Nullable="false" />
+          <Property Name="Notificaciones_Presupuestos" Type="Boolean" Nullable="false" />
+          <Property Name="Notificaciones_Recordatorios" Type="Boolean" Nullable="false" />
+          <Property Name="Notificaciones_Estadisticas" Type="Boolean" Nullable="false" />
+          <Property Name="Notificaciones_Expiran" Type="Boolean" Nullable="false" />
+          <Property Name="Notificaciones_Expiran_Frecuencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Notificaciones_Expiran_Valor" Type="Int32" />
+          <Property Name="Respaldar" Type="Boolean" Nullable="false" />
+          <Property Name="Limite_Respaldos" Type="Boolean" Nullable="false" />
+          <Property Name="Respaldos_Cantidad_Maxima" Type="Int32" />
+          <Property Name="ID_FrecuenciaInicio_Respaldos" Type="Guid" />
+          <NavigationProperty Name="Usuario" Relationship="BudgeeModel.FK_Usuario_Configuracion_Usuario" FromRole="Configuracion_Usuario" ToRole="Usuario" />
+          <NavigationProperty Name="FrecuenciaInicio" Relationship="BudgeeModel.FK_Configuracion_Usuario_FrecuenciaInicio" FromRole="Configuracion_Usuario" ToRole="FrecuenciaInicio" />
+        </EntityType>
+        <Association Name="FK_Usuario_Configuracion_Usuario">
+          <End Type="BudgeeModel.Configuracion_Usuario" Role="Configuracion_Usuario" Multiplicity="1" />
+          <End Type="BudgeeModel.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Configuracion_Usuario">
+              <PropertyRef Name="ID_Configuracion_Usuario" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="ID_Configuracion_Usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Lapso">
+          <Key>
+            <PropertyRef Name="ID_Lapso" />
+          </Key>
+          <Property Name="ID_Lapso" Type="Guid" Nullable="false" />
+          <Property Name="Tipo_Lapso" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Desde" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_Hasta" Type="DateTime" Precision="3" />
+          <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FrecuenciaInicio">
+          <Key>
+            <PropertyRef Name="ID_FrecuenciaInicio" />
+          </Key>
+          <Property Name="ID_FrecuenciaInicio" Type="Guid" Nullable="false" />
+          <Property Name="FrecuenciaMagnitud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FrecuenciaValor" Type="Int32" />
+          <Property Name="Año" Type="Int32" />
+          <Property Name="Mes" Type="Int32" />
+          <Property Name="Dia_del_Mes" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dia_de_la_Semana" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Horario" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Fecha_Ultimo_Proceso" Type="DateTime" Precision="3" />
+          <Property Name="ID_Usuario" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="Configuracion_Usuario" Relationship="BudgeeModel.FK_Configuracion_Usuario_FrecuenciaInicio" FromRole="FrecuenciaInicio" ToRole="Configuracion_Usuario" />
+        </EntityType>
+        <Association Name="FK_Configuracion_Usuario_FrecuenciaInicio">
+          <End Type="BudgeeModel.FrecuenciaInicio" Role="FrecuenciaInicio" Multiplicity="0..1" />
+          <End Type="BudgeeModel.Configuracion_Usuario" Role="Configuracion_Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FrecuenciaInicio">
+              <PropertyRef Name="ID_FrecuenciaInicio" />
+            </Principal>
+            <Dependent Role="Configuracion_Usuario">
+              <PropertyRef Name="ID_FrecuenciaInicio_Respaldos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BudgeeModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Familia">
+            <EntityTypeMapping TypeName="BudgeeModel.Familia">
+              <MappingFragment StoreEntitySet="Familia">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="ID_Familia" ColumnName="ID_Familia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Familia_Familia">
+            <EntityTypeMapping TypeName="BudgeeModel.Familia_Familia">
+              <MappingFragment StoreEntitySet="Familia_Familia">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="ID_Familia_Hija" ColumnName="ID_Familia_Hija" />
+                <ScalarProperty Name="ID_Familia_Padre" ColumnName="ID_Familia_Padre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Familia_Patente">
+            <EntityTypeMapping TypeName="BudgeeModel.Familia_Patente">
+              <MappingFragment StoreEntitySet="Familia_Patente">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="ID_Patente" ColumnName="ID_Patente" />
+                <ScalarProperty Name="ID_Familia" ColumnName="ID_Familia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patente">
+            <EntityTypeMapping TypeName="BudgeeModel.Patente">
+              <MappingFragment StoreEntitySet="Patente">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Definicion" ColumnName="Definicion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="ID_Patente" ColumnName="ID_Patente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario_Familia">
+            <EntityTypeMapping TypeName="BudgeeModel.Usuario_Familia">
+              <MappingFragment StoreEntitySet="Usuario_Familia">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="ID_Familia" ColumnName="ID_Familia" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario_Patente">
+            <EntityTypeMapping TypeName="BudgeeModel.Usuario_Patente">
+              <MappingFragment StoreEntitySet="Usuario_Patente">
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="ID_Patente" ColumnName="ID_Patente" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SesionTrack">
+            <EntityTypeMapping TypeName="BudgeeModel.SesionTrack">
+              <MappingFragment StoreEntitySet="SesionTrack">
+                <ScalarProperty Name="TipoTrack" ColumnName="TipoTrack" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="Fecha_Proceso" ColumnName="Fecha_Proceso" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="ID_SesionTrack" ColumnName="ID_SesionTrack" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="BudgeeModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="ID_Configuracion_Usuario" ColumnName="ID_Configuracion_Usuario" />
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Password_Usuario" ColumnName="Password_Usuario" />
+                <ScalarProperty Name="Nombre_Usuario" ColumnName="Nombre_Usuario" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configuracion_Usuario">
+            <EntityTypeMapping TypeName="BudgeeModel.Configuracion_Usuario">
+              <MappingFragment StoreEntitySet="Configuracion_Usuario">
+                <ScalarProperty Name="ID_FrecuenciaInicio_Respaldos" ColumnName="ID_FrecuenciaInicio_Respaldos" />
+                <ScalarProperty Name="Respaldos_Cantidad_Maxima" ColumnName="Respaldos_Cantidad_Maxima" />
+                <ScalarProperty Name="Limite_Respaldos" ColumnName="Limite_Respaldos" />
+                <ScalarProperty Name="Respaldar" ColumnName="Respaldar" />
+                <ScalarProperty Name="Notificaciones_Expiran_Valor" ColumnName="Notificaciones_Expiran_Valor" />
+                <ScalarProperty Name="Notificaciones_Expiran_Frecuencia" ColumnName="Notificaciones_Expiran_Frecuencia" />
+                <ScalarProperty Name="Notificaciones_Expiran" ColumnName="Notificaciones_Expiran" />
+                <ScalarProperty Name="Notificaciones_Estadisticas" ColumnName="Notificaciones_Estadisticas" />
+                <ScalarProperty Name="Notificaciones_Recordatorios" ColumnName="Notificaciones_Recordatorios" />
+                <ScalarProperty Name="Notificaciones_Presupuestos" ColumnName="Notificaciones_Presupuestos" />
+                <ScalarProperty Name="Notificaciones_Windows" ColumnName="Notificaciones_Windows" />
+                <ScalarProperty Name="Alarmas_Windows" ColumnName="Alarmas_Windows" />
+                <ScalarProperty Name="Mantener_Sesion_Iniciada" ColumnName="Mantener_Sesion_Iniciada" />
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Divisa_Default" ColumnName="Divisa_Default" />
+                <ScalarProperty Name="ID_Configuracion_Usuario" ColumnName="ID_Configuracion_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lapso">
+            <EntityTypeMapping TypeName="BudgeeModel.Lapso">
+              <MappingFragment StoreEntitySet="Lapso">
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Fecha_Hasta" ColumnName="Fecha_Hasta" />
+                <ScalarProperty Name="Fecha_Desde" ColumnName="Fecha_Desde" />
+                <ScalarProperty Name="Tipo_Lapso" ColumnName="Tipo_Lapso" />
+                <ScalarProperty Name="ID_Lapso" ColumnName="ID_Lapso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FrecuenciaInicio">
+            <EntityTypeMapping TypeName="BudgeeModel.FrecuenciaInicio">
+              <MappingFragment StoreEntitySet="FrecuenciaInicio">
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Fecha_Ultimo_Proceso" ColumnName="Fecha_Ultimo_Proceso" />
+                <ScalarProperty Name="Horario" ColumnName="Horario" />
+                <ScalarProperty Name="Dia_de_la_Semana" ColumnName="Dia_de_la_Semana" />
+                <ScalarProperty Name="Dia_del_Mes" ColumnName="Dia_del_Mes" />
+                <ScalarProperty Name="Mes" ColumnName="Mes" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+                <ScalarProperty Name="FrecuenciaValor" ColumnName="FrecuenciaValor" />
+                <ScalarProperty Name="FrecuenciaMagnitud" ColumnName="FrecuenciaMagnitud" />
+                <ScalarProperty Name="ID_FrecuenciaInicio" ColumnName="ID_FrecuenciaInicio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

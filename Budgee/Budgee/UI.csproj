@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5547634-CEC6-4C2F-A453-B60BF4822819}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>bin\Release\UI.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\piggy icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChartManager.cs" />
+    <Compile Include="Controls\Buttons\DefaultButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\DarkButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\MediumButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\LightButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxs\DarkCheckbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxs\DefaultCheckbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxs\DefaultComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Grids\DefaultDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Labels\DefaultLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Labels\DarkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxs\DefaultTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxs\IntegerBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxs\NumericBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Caracteristicas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Caracteristicas.Designer.cs">
+      <DependentUpon>ABM_Caracteristicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Etiquetas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Etiquetas.Designer.cs">
+      <DependentUpon>ABM_Etiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Categorias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Categorias.Designer.cs">
+      <DependentUpon>ABM_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Presupuestos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Presupuestos.Designer.cs">
+      <DependentUpon>ABM_Presupuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Cuentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Cuentas.Designer.cs">
+      <DependentUpon>ABM_Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Recordatorios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Recordatorios.Designer.cs">
+      <DependentUpon>ABM_Recordatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Planificaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Planificaciones.Designer.cs">
+      <DependentUpon>ABM_Planificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Plantillas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Plantillas.Designer.cs">
+      <DependentUpon>ABM_Plantillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_TransaccionesConcretadas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_TransaccionesConcretadas.Designer.cs">
+      <DependentUpon>ABM_TransaccionesConcretadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_TransaccionesPendientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_TransaccionesPendientes.Designer.cs">
+      <DependentUpon>ABM_TransaccionesPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\Filterable\Filterable_FilterChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\Filterable\Filterable_FilterChart.Designer.cs">
+      <DependentUpon>Filterable_FilterChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterChart\FilterChart_Distribucion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterChart\FilterChart_Distribucion.Designer.cs">
+      <DependentUpon>FilterChart_Distribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterChart\FilterChart_PatrimonioNeto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterChart\FilterChart_PatrimonioNeto.Designer.cs">
+      <DependentUpon>FilterChart_PatrimonioNeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterChart\FilterChart_IngresoEgreso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterChart\FilterChart_IngresoEgreso.Designer.cs">
+      <DependentUpon>FilterChart_IngresoEgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_NotifVistas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_NotifVistas.Designer.cs">
+      <DependentUpon>FilterGrid_NotifVistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_NotifNuevas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_NotifNuevas.Designer.cs">
+      <DependentUpon>FilterGrid_NotifNuevas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Familias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Familias.Designer.cs">
+      <DependentUpon>MenuTab_Familias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Notificaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Notificaciones.Designer.cs">
+      <DependentUpon>MenuTab_Notificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Usuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Usuarios.Designer.cs">
+      <DependentUpon>MenuTab_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Estadisticas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Estadisticas.Designer.cs">
+      <DependentUpon>MenuTab_Estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Configuracion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Configuracion.Designer.cs">
+      <DependentUpon>MenuTab_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_Configuracion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_Configuracion.Designer.cs">
+      <DependentUpon>UC_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_Filterable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_Filterable.Designer.cs">
+      <DependentUpon>UC_Filterable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_Notificaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_Notificaciones.Designer.cs">
+      <DependentUpon>FilterGrid_Notificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_GenericTransacciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_GenericTransacciones.Designer.cs">
+      <DependentUpon>ABM_GenericTransacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Transacciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\ABMGrid\ABM_Transacciones.Designer.cs">
+      <DependentUpon>ABM_Transacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Cuentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Cuentas.Designer.cs">
+      <DependentUpon>MenuTab_Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Categorias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Categorias.Designer.cs">
+      <DependentUpon>MenuTab_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Etiquetas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Etiquetas.Designer.cs">
+      <DependentUpon>MenuTab_Etiquetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Plantillas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Plantillas.Designer.cs">
+      <DependentUpon>MenuTab_Plantillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Presupuestos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Presupuestos.Designer.cs">
+      <DependentUpon>MenuTab_Presupuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Recordatorios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Recordatorios.Designer.cs">
+      <DependentUpon>MenuTab_Recordatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\Filterable\Filterable_FilterGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\Filterable\Filterable_FilterGrid.Designer.cs">
+      <DependentUpon>Filterable_FilterGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_ABMGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\FilterGrid\FilterGrid_ABMGrid.Designer.cs">
+      <DependentUpon>FilterGrid_ABMGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_MenuTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_MenuTab.Designer.cs">
+      <DependentUpon>UC_MenuTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Planificacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Planificacion.Designer.cs">
+      <DependentUpon>MenuTab_Planificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_HolguraPresupuesto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_HolguraPresupuesto.Designer.cs">
+      <DependentUpon>UC_HolguraPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_Overview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_Overview.Designer.cs">
+      <DependentUpon>UC_Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_AcercaDe.Designer.cs">
+      <DependentUpon>f_AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_AdministracionFamilias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_AdministracionFamilias.Designer.cs">
+      <DependentUpon>UC_AdministracionFamilias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_CambiarNombreUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_CambiarNombreUsuario.Designer.cs">
+      <DependentUpon>f_CambiarNombreUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_CambiarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_CambiarPassword.Designer.cs">
+      <DependentUpon>f_CambiarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_ConfirmarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_ConfirmarPassword.Designer.cs">
+      <DependentUpon>f_ConfirmarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\UC_AdministracionUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_AdministracionUsuarios.Designer.cs">
+      <DependentUpon>UC_AdministracionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerExpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerExpresion.Designer.cs">
+      <DependentUpon>f_EstablecerExpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerFrecuenciaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerFrecuenciaInicio.Designer.cs">
+      <DependentUpon>f_EstablecerFrecuenciaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerLapso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerLapso.Designer.cs">
+      <DependentUpon>f_EstablecerLapso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariable.Designer.cs">
+      <DependentUpon>f_EstablecerVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariableDetalle3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariableDetalle3.Designer.cs">
+      <DependentUpon>f_EstablecerVariableDetalle3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariableDetalle2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariableDetalle2.Designer.cs">
+      <DependentUpon>f_EstablecerVariableDetalle2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariableDetalle1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_EstablecerVariableDetalle1.Designer.cs">
+      <DependentUpon>f_EstablecerVariableDetalle1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_SeleccionarElem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_SeleccionarElem.Designer.cs">
+      <DependentUpon>f_SeleccionarElem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_Talonario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_Talonario.Designer.cs">
+      <DependentUpon>f_Talonario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Familia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Familia.Designer.cs">
+      <DependentUpon>SeleccionarElem_Familia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Patente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Patente.Designer.cs">
+      <DependentUpon>SeleccionarElem_Patente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Cuenta.Designer.cs">
+      <DependentUpon>SeleccionarElem_Cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Etiqueta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Etiqueta.Designer.cs">
+      <DependentUpon>SeleccionarElem_Etiqueta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Categoria.Designer.cs">
+      <DependentUpon>SeleccionarElem_Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Planificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Planificacion.Designer.cs">
+      <DependentUpon>SeleccionarElem_Planificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Transaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Transaccion.Designer.cs">
+      <DependentUpon>SeleccionarElem_Transaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Presupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Presupuesto.Designer.cs">
+      <DependentUpon>SeleccionarElem_Presupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Plantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarElems\SeleccionarElem_Plantilla.Designer.cs">
+      <DependentUpon>SeleccionarElem_Plantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Etiqueta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Etiqueta.Designer.cs">
+      <DependentUpon>Talonario_Etiqueta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Categoria.Designer.cs">
+      <DependentUpon>Talonario_Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Caracteristica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Caracteristica.Designer.cs">
+      <DependentUpon>Talonario_Caracteristica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Usuario.Designer.cs">
+      <DependentUpon>Talonario_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Familia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Familia.Designer.cs">
+      <DependentUpon>Talonario_Familia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Planificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Planificacion.Designer.cs">
+      <DependentUpon>Talonario_Planificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Cuenta.Designer.cs">
+      <DependentUpon>Talonario_Cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Plantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Plantilla.Designer.cs">
+      <DependentUpon>Talonario_Plantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Presupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Presupuesto.Designer.cs">
+      <DependentUpon>Talonario_Presupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Recordatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Recordatorio.Designer.cs">
+      <DependentUpon>Talonario_Recordatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Transaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talonarios\Talonario_Transaccion.Designer.cs">
+      <DependentUpon>Talonario_Transaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Config.cs" />
+    <Compile Include="Controls\Buttons\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_SideMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\UC_SideMenu.Designer.cs">
+      <DependentUpon>UC_SideMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Transacciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UC\MenuTab\MenuTab_Transacciones.Designer.cs">
+      <DependentUpon>MenuTab_Transacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\f_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_Main.Designer.cs">
+      <DependentUpon>f_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\f_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\f_Login.Designer.cs">
+      <DependentUpon>f_Login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_Cuentas.resx">
+      <DependentUpon>ABM_Cuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_Etiquetas.resx">
+      <DependentUpon>ABM_Etiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_Presupuestos.resx">
+      <DependentUpon>ABM_Presupuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_Recordatorios.resx">
+      <DependentUpon>ABM_Recordatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_TransaccionesConcretadas.resx">
+      <DependentUpon>ABM_TransaccionesConcretadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_TransaccionesPendientes.resx">
+      <DependentUpon>ABM_TransaccionesPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\Filterable\Filterable_FilterChart.resx">
+      <DependentUpon>Filterable_FilterChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\FilterChart\FilterChart_IngresoEgreso.resx">
+      <DependentUpon>FilterChart_IngresoEgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Familias.resx">
+      <DependentUpon>MenuTab_Familias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Notificaciones.resx">
+      <DependentUpon>MenuTab_Notificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Usuarios.resx">
+      <DependentUpon>MenuTab_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Estadisticas.resx">
+      <DependentUpon>MenuTab_Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Configuracion.resx">
+      <DependentUpon>MenuTab_Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_Configuracion.resx">
+      <DependentUpon>UC_Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_Filterable.resx">
+      <DependentUpon>UC_Filterable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\FilterGrid\FilterGrid_Notificaciones.resx">
+      <DependentUpon>FilterGrid_Notificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\ABMGrid\ABM_GenericTransacciones.resx">
+      <DependentUpon>ABM_GenericTransacciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Categorias.resx">
+      <DependentUpon>MenuTab_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Etiquetas.resx">
+      <DependentUpon>MenuTab_Etiquetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Planificacion.resx">
+      <DependentUpon>MenuTab_Planificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Cuentas.resx">
+      <DependentUpon>MenuTab_Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Plantillas.resx">
+      <DependentUpon>MenuTab_Plantillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Presupuestos.resx">
+      <DependentUpon>MenuTab_Presupuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Recordatorios.resx">
+      <DependentUpon>MenuTab_Recordatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\Filterable\Filterable_FilterGrid.resx">
+      <DependentUpon>Filterable_FilterGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\FilterGrid\FilterGrid_ABMGrid.resx">
+      <DependentUpon>FilterGrid_ABMGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_MenuTab.resx">
+      <DependentUpon>UC_MenuTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_HolguraPresupuesto.resx">
+      <DependentUpon>UC_HolguraPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_Overview.resx">
+      <DependentUpon>UC_Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_SideMenu.resx">
+      <DependentUpon>UC_SideMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\MenuTab\MenuTab_Transacciones.resx">
+      <DependentUpon>MenuTab_Transacciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_AcercaDe.resx">
+      <DependentUpon>f_AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UC\UC_AdministracionFamilias.resx">
+      <DependentUpon>UC_AdministracionFamilias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_CambiarNombreUsuario.resx">
+      <DependentUpon>f_CambiarNombreUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_CambiarPassword.resx">
+      <DependentUpon>f_CambiarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_ConfirmarPassword.resx">
+      <DependentUpon>f_ConfirmarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerExpresion.resx">
+      <DependentUpon>f_EstablecerExpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerFrecuenciaInicio.resx">
+      <DependentUpon>f_EstablecerFrecuenciaInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerLapso.resx">
+      <DependentUpon>f_EstablecerLapso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerVariable.resx">
+      <DependentUpon>f_EstablecerVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerVariableDetalle3.resx">
+      <DependentUpon>f_EstablecerVariableDetalle3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerVariableDetalle2.resx">
+      <DependentUpon>f_EstablecerVariableDetalle2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_EstablecerVariableDetalle1.resx">
+      <DependentUpon>f_EstablecerVariableDetalle1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_Login.resx">
+      <DependentUpon>f_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_Main.resx">
+      <DependentUpon>f_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\UC\UC_AdministracionUsuarios.resx">
+      <DependentUpon>UC_AdministracionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_SeleccionarElem.resx">
+      <DependentUpon>f_SeleccionarElem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\f_Talonario.resx">
+      <DependentUpon>f_Talonario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Familia.resx">
+      <DependentUpon>SeleccionarElem_Familia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Patente.resx">
+      <DependentUpon>SeleccionarElem_Patente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Cuenta.resx">
+      <DependentUpon>SeleccionarElem_Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Etiqueta.resx">
+      <DependentUpon>SeleccionarElem_Etiqueta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Categoria.resx">
+      <DependentUpon>SeleccionarElem_Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Planificacion.resx">
+      <DependentUpon>SeleccionarElem_Planificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Transaccion.resx">
+      <DependentUpon>SeleccionarElem_Transaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Presupuesto.resx">
+      <DependentUpon>SeleccionarElem_Presupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarElems\SeleccionarElem_Plantilla.resx">
+      <DependentUpon>SeleccionarElem_Plantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Etiqueta.resx">
+      <DependentUpon>Talonario_Etiqueta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Categoria.resx">
+      <DependentUpon>Talonario_Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Caracteristica.resx">
+      <DependentUpon>Talonario_Caracteristica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Cuenta.resx">
+      <DependentUpon>Talonario_Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Usuario.resx">
+      <DependentUpon>Talonario_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Familia.resx">
+      <DependentUpon>Talonario_Familia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Planificacion.resx">
+      <DependentUpon>Talonario_Planificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Plantilla.resx">
+      <DependentUpon>Talonario_Plantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Presupuesto.resx">
+      <DependentUpon>Talonario_Presupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Recordatorio.resx">
+      <DependentUpon>Talonario_Recordatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talonarios\Talonario_Transaccion.resx">
+      <DependentUpon>Talonario_Transaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Help en-US.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Help es-ES.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="i18n\idioma.en-US" />
+    <None Include="i18n\idioma.es-ES" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piggy bg 2.png" />
+    <Content Include="Resources\piggy icon.ico" />
+    <None Include="Resources\piggy bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{C370D1E8-2E61-4BA8-ADDE-91EFFBC06A0F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{87FE1185-B172-4ACA-8D4D-2C1F9C515DD7}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enums\Enums.csproj">
+      <Project>{99130ddd-1506-4251-b844-706e81cf25ed}</Project>
+      <Name>Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SL\SL.csproj">
+      <Project>{73608bf9-bfa4-41d5-a4fa-fd8a188f143c}</Project>
+      <Name>SL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

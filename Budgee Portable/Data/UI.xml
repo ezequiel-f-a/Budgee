@@ -1,0 +1,1348 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UI</name>
+    </assembly>
+    <members>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Caracteristicas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Caracteristicas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Caracteristicas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Etiquetas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Etiquetas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Etiquetas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Categorias.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Categorias.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Categorias.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Presupuestos.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Presupuestos.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Presupuestos.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Cuentas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Cuentas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Cuentas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Recordatorios.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Recordatorios.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Recordatorios.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Planificaciones.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Planificaciones.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Planificaciones.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_TransaccionesConcretadas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_TransaccionesConcretadas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_TransaccionesConcretadas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_TransaccionesPendientes.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_TransaccionesPendientes.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_TransaccionesPendientes.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_GenericTransacciones`1.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_GenericTransacciones`1.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_GenericTransacciones`1.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrids.ABM_Transacciones.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Transacciones.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrids.ABM_Transacciones.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.ABMGrid.ABM_Plantillas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrid.ABM_Plantillas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.ABMGrid.ABM_Plantillas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.Filterable.Filterable_FilterChart`2.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.Filterable.Filterable_FilterChart`2.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.Filterable.Filterable_FilterChart`2.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.Filterable.Filterable_FilterGrid`1.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.Filterable.Filterable_FilterGrid`1.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.Filterable.Filterable_FilterGrid`1.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterChart.FilterChart_Distribucion.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterChart.FilterChart_Distribucion.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterChart.FilterChart_Distribucion.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterChart.FilterChart_PatrimonioNeto.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterChart.FilterChart_PatrimonioNeto.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterChart.FilterChart_PatrimonioNeto.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterChart.FilterChart_IngresoEgreso.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterChart.FilterChart_IngresoEgreso.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterChart.FilterChart_IngresoEgreso.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterGrid.FilterGrid_NotifVistas.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_NotifVistas.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_NotifVistas.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterGrid.FilterGrid_NotifNuevas.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_NotifNuevas.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_NotifNuevas.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterGrid.FilterGrid_Notificaciones.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_Notificaciones.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_Notificaciones.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.FilterGrid.FilterGrid_ABMGrid`1.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Familias.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Familias.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Familias.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Notificaciones.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Notificaciones.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Notificaciones.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Usuarios.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Usuarios.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Usuarios.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Estadisticas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Estadisticas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Estadisticas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Configuracion.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Configuracion.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Configuracion.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Cuentas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Cuentas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Cuentas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Categorias.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Categorias.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Categorias.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Etiquetas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Etiquetas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Etiquetas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Plantillas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Plantillas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Plantillas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Presupuestos.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Presupuestos.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Presupuestos.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Recordatorios.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Recordatorios.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Recordatorios.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Planificacion.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Planificacion.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Planificacion.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.MenuTab.MenuTab_Transacciones.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Transacciones.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.MenuTab.MenuTab_Transacciones.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_Configuracion.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_Configuracion.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_Configuracion.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_Filterable`1.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_Filterable`1.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_Filterable`1.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_MenuTab.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_MenuTab.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_MenuTab.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_HolguraPresupuesto.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_HolguraPresupuesto.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_HolguraPresupuesto.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_Overview.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_Overview.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_Overview.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_AdministracionFamilias.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_AdministracionFamilias.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_AdministracionFamilias.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_AdministracionUsuarios.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_AdministracionUsuarios.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_AdministracionUsuarios.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Controls.UC.UC_SideMenu.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Controls.UC.UC_SideMenu.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Controls.UC.UC_SideMenu.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_AcercaDe.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_AcercaDe.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_AcercaDe.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_CambiarNombreUsuario.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_CambiarNombreUsuario.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_CambiarNombreUsuario.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_CambiarPassword.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_CambiarPassword.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_CambiarPassword.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_ConfirmarPassword.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_ConfirmarPassword.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_ConfirmarPassword.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerExpresion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerExpresion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerExpresion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerFrecuenciaInicio.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerFrecuenciaInicio.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerFrecuenciaInicio.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerLapso.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerLapso.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerLapso.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerVariable.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariable.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariable.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerVariableDetalle3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariableDetalle3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariableDetalle3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerVariableDetalle2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariableDetalle2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariableDetalle2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_EstablecerVariableDetalle1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariableDetalle1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_EstablecerVariableDetalle1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_SeleccionarElem`1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_SeleccionarElem`1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_SeleccionarElem`1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_Talonario`1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_Talonario`1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_Talonario`1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Familia.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Familia.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Familia.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Patente.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Patente.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Patente.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Cuenta.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Cuenta.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Cuenta.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Etiqueta.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Etiqueta.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Etiqueta.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Categoria.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Categoria.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Categoria.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Planificacion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Planificacion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Planificacion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Transaccion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Transaccion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Transaccion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Presupuesto.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Presupuesto.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Presupuesto.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.SeleccionarElems.SeleccionarElem_Plantilla.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Plantilla.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.SeleccionarElems.SeleccionarElem_Plantilla.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Etiqueta.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Etiqueta.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Etiqueta.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Categoria.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Categoria.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Categoria.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Caracteristica.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Caracteristica.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Caracteristica.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Usuario.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Usuario.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Usuario.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Familia.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Familia.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Familia.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Planificacion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Planificacion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Planificacion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Cuenta.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Cuenta.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Cuenta.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Plantilla.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Plantilla.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Plantilla.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Presupuesto.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Presupuesto.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Presupuesto.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Recordatorio.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Recordatorio.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Recordatorio.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.Talonarios.Talonario_Transaccion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Transaccion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.Talonarios.Talonario_Transaccion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_Main.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_Main.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:UI.Forms.f_Main.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:UI.Forms.f_Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UI.Forms.f_Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UI.Forms.f_Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:UI.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:UI.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:UI.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:UI.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:UI.Properties.Resources.piggy_bg">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:UI.Properties.Resources.piggy_bg_2">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
