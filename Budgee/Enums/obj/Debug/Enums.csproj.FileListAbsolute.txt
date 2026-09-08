@@ -1,6 +1,0 @@
-D:\Proyectos\Estudio\UAI\_APROBADAS\3er año\Practica Profesional\TPs\TP Campo\Budgee\Enums\bin\Debug\Enums.dll
-D:\Proyectos\Estudio\UAI\_APROBADAS\3er año\Practica Profesional\TPs\TP Campo\Budgee\Enums\bin\Debug\Enums.pdb
-D:\Proyectos\Estudio\UAI\_APROBADAS\3er año\Practica Profesional\TPs\TP Campo\Budgee\Enums\obj\Debug\Enums.csproj.AssemblyReference.cache
-D:\Proyectos\Estudio\UAI\_APROBADAS\3er año\Practica Profesional\TPs\TP Campo\Budgee\Enums\obj\Debug\Enums.csproj.CoreCompileInputs.cache
-D:\Proyectos\Estudio\UAI\_APROBADAS\3er año\Practica Profesional\TPs\TP Campo\Budgee\Enums\obj\Debug\Enums.dll
-D:\Proyectos\Estudio\UAI\_APROBADAS\3er año\Practica Profesional\TPs\TP Campo\Budgee\Enums\obj\Debug\Enums.pdb
